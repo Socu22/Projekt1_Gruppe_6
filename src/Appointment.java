@@ -1,14 +1,19 @@
 public class Appointment {
 
-    int id=0;
+    static int accountCounter=1;
+    private int id=0;
 
-    Appointment( ){
-        id=id+1;
+
+
+    Appointment(){
+        this.id=accountCounter++;
+
+
     }
 
 
     @Override
     public String toString() {
-        return ""+id;
+        return "Appointment id: "+id;
     }
 }
