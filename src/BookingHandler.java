@@ -3,14 +3,14 @@ import java.util.Collections;
 public class BookingHandler extends MenuAndInterface {
     public static void main(String[] args) {
         BookingHandler b = new BookingHandler(); //test
-        int i =1;
-        while (true) {
+
+
             //b.createBooking(2); //create in a specific timestamp
             b.nextDay(); //send to arraylist (in Menu and Inteface) to send in the timestamps so it can be changed in a specific way.
             //System.out.println(appointmentsArrayList.size()); //confirms that arraylist has increased
             //System.out.println(appointmentsArrayList.get(2)); //confirms that appointment is there (create a booking)
-            b.createBookingToSpecificDay(i, 1);
-            i++;
+            b.createBookingToSpecificDay(1, 1);
+
 
             b.nextDay();
             b.createBookingToSpecificDay(2, 1);
@@ -24,7 +24,7 @@ public class BookingHandler extends MenuAndInterface {
 
 
             b.showBooking();
-        }
+
 
 
 
@@ -68,6 +68,7 @@ public class BookingHandler extends MenuAndInterface {
     public void showBooking(){
         for (int i = 0; i < appointmentsArrayList.size(); i++) {
             System.out.println(appointmentsArrayList.get(i));
+
 
         }
     }
