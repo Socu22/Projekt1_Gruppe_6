@@ -1,3 +1,8 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
+
 public class Appointment {
     public static void main(String[] args) {
 
@@ -8,15 +13,16 @@ public class Appointment {
     private String name="";
     private String phoneNumber ="";
     private String mail="";
-    private String date="";
+    private LocalDate date;
     private int timeSlot;
+    private LocalDate appointmentDateData;
 
 
 
     Appointment(){
 
         this.bookingId =accountCounter++;
-        this.date="XX/XX/XX";
+        this.date=LocalDate.of(2024,1,1);
         this.timeSlot=999999;
         this.name="Empty";
         this.phoneNumber ="XXXXXXXX";
@@ -42,6 +48,6 @@ public class Appointment {
 
     @Override
     public String toString() {
-        return String.format("Appointment nr %d,Date: %s, TimeSlot(1-n): %d  ,Name: %s, Phone Number: %s, Mail: %s,", bookingId,date,timeSlot,name, phoneNumber, mail);
+        return String.format("Appointment nr %d,Date: "+date+", TimeSlot(1-n): %d  ,Name: %s, Phone Number: %s, Mail: %s,", bookingId,timeSlot,name, phoneNumber, mail);
     }
 }
