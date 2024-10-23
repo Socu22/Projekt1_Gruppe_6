@@ -4,25 +4,29 @@ public class Appointment {
     }
 
     static int accountCounter=1;
-    private int id=0;
+    private int bookingId =0;
     private String name="";
+    private String phoneNumber ="";
+    private String mail="";
+    private String date="";
+    private int timeSlot;
 
 
 
     Appointment(){
-        this.id=accountCounter++;
-        this.name="test";
+
+        this.bookingId =accountCounter++;
+        this.date="XX/XX/XX";
+        this.timeSlot=999999;
+        this.name="Empty";
+        this.phoneNumber ="XXXXXXXX";
+        this.mail="XXX@XX.dk";
+
 
 
     }
 
-    public int getId() {
-        return this.id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public static void setAccountCounter(int accountCounter) {
         Appointment.accountCounter = accountCounter;
@@ -32,8 +36,12 @@ public class Appointment {
         this.name = name;
     }
 
+    public int getBookingId() {
+        return bookingId;
+    }
+
     @Override
     public String toString() {
-        return "Appointment_Id:"+id+"\n\t"+name;
+        return String.format("Appointment nr %d,Date: %s, TimeSlot(1-n): %d  ,Name: %s, Phone Number: %s, Mail: %s,", bookingId,date,timeSlot,name, phoneNumber, mail);
     }
 }
