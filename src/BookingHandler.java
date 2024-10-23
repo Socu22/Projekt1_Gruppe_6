@@ -19,7 +19,9 @@ public class BookingHandler extends MenuAndInterface {
          */
         BookingHandler b2 = new BookingHandler();
         b2.createAllAppointments();
+        b2.changeSpecificBooking(1,1,"Jake Fucktart");
         b2.showBooking();
+
 
     }
 
@@ -29,7 +31,8 @@ public class BookingHandler extends MenuAndInterface {
 
 
     public void createAllAppointments(){
-        for (int i = 0; i < 366; i++) { //det her er ikke en fejl den her metode laver præcist et års dage
+
+        for (int i = 0; i < 366; i++) {
             nextDay();
             for (int j = 0; j < timeSlotInADay.length ; j++) {
                 timeSlotInADay[j]= new Appointment();
@@ -39,14 +42,44 @@ public class BookingHandler extends MenuAndInterface {
 
 
 
+
         }
+        //some kind of bug with ekstra fields in arrayList but ti works now with the code
+        appointmentsArrayList.remove(0);
+        appointmentsArrayList.remove(1);
+        appointmentsArrayList.remove(2);
+        appointmentsArrayList.remove(3);
+        appointmentsArrayList.remove(0);
+        appointmentsArrayList.remove(1);
+        appointmentsArrayList.remove(0);;
+        appointmentsArrayList.removeFirst();
+
+
+
+
+
+
+
     }
 
     public void nextDay(){
         Collections.addAll(appointmentsArrayList,timeSlotInADay);
 
     }
+    public void changeSpecificBooking(int dayNo, int posOneToEight, String newName) {
+        int index = (dayNo - 1) * 8 + (posOneToEight - 1);  // Calculate correct index in ArrayList
+        if (index < appointmentsArrayList.size()) {
+            Appointment currentAppointment = appointmentsArrayList.get(index);
+            try {
+                currentAppointment.setName(newName);
+
+            }catch (NullPointerException e){}
+
+
+        }
+/*
     public void createBookingToSpecificDay(int dayNo, int posOneToEight) {
+
         int index = (dayNo - 1) * 8 + (posOneToEight - 1);  // Calculate the correct index
         if (index < appointmentsArrayList.size()) {
             appointmentsArrayList.set(index, new Appointment());  // Replace existing appointment
@@ -67,6 +100,9 @@ public class BookingHandler extends MenuAndInterface {
         } else {
             System.out.println("Error: Invalid booking index.");
         }
+    }
+
+ */
     }
     public void showBooking(){
         for (int i = 0; i < appointmentsArrayList.size(); i++) {
