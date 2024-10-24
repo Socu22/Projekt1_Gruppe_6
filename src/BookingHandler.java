@@ -65,6 +65,16 @@ public class BookingHandler extends MenuAndInterface {
         if (index < appointmentsArrayList.size()) {appointmentsArrayList.set(index, null);  // Replace existing appointment
         } else {System.out.println("Error: Invalid booking index.");}}*/
     }
+    public void deleteBookingToSpecificDay(int dayNo, int posOneToEight){
+        index = (dayNo - 1) * 8 + (posOneToEight - 1);
+        if (index < appointmentsArrayList.size()) {
+            currentAppointment = appointmentsArrayList.get(index);
+            try {
+                currentAppointment.setName("Empty");
+            }catch (NullPointerException e){}
+        }
+
+    }
     public void showBooking(){//prints all booking in system out print
         for (int i = 0; i < appointmentsArrayList.size(); i++) {
             System.out.println(appointmentsArrayList.get(i));
