@@ -98,7 +98,7 @@ public class PaymentHandler {
 
     // Ny metode til at validere appointmentId
     // Denne metode tjekker, om det indtastede appointmentId findes i listen af aftaler fra FileHandler
-    private boolean validateAppointmentId(int appointmentId) {
+    public boolean validateAppointmentId(int appointmentId) {
         ArrayList<Appointment> appointments = fileHandler.getList();
         for (Appointment appointment : appointments) {
             if (appointment.getBookingId() == appointmentId) {
