@@ -16,16 +16,15 @@ public class Appointment {
     private double price;
     private boolean isBooked = false;
 
-
     Appointment(AppointmentConverted aC){
 
-        this.bookingId =accountCounter++;
+        this.bookingId =aC.getBookingId();
         this.date=LocalDate.parse(aC.getDate());
         this.timeSlot=LocalTime.parse(aC.getTime());
         this.name=aC.getname();
         this.phoneNumber = aC.getPhoneNumer();
-        this.price =700.00;
-        this.isBooked=false;
+        this.price =aC.getPrice();
+        this.isBooked=aC.isBooked();
     }
 
     Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment, String name, int phonenumber){
@@ -35,7 +34,7 @@ public class Appointment {
         this.timeSlot=timeForAppointment;
         this.name=name;
         this.phoneNumber =phonenumber;
-        this.price = 700.00;
+        this.price = 0.0;
         this.isBooked = false;
     }
 
@@ -51,6 +50,9 @@ public class Appointment {
     String getname(){
         return name;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     LocalDate getDate(){
         return date;
@@ -60,16 +62,25 @@ public class Appointment {
         return timeSlot;
     }
 
-    int getPhoneNumer(){
+    int getPhoneNumber(){
         return phoneNumber;
     }
+    public void setPhoneNumber(int recievedPhonenumber){
+        this.phoneNumber=recievedPhonenumber;
+    }
 
-    public void setName(String name) {
-        this.name = name;
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice(double recievedPrice){
+        this.price=recievedPrice;
     }
 
     public int getBookingId() {
         return bookingId;
+    }
+    public void setBookingId(int recievedBookingid){
+        this.bookingId=recievedBookingid;
     }
 
     public String isItBooked(){
@@ -80,6 +91,18 @@ public class Appointment {
             return "AVAILABLE";
         }
     }
+
+    public boolean getBookingstatus(){
+        return isBooked;
+    }
+    public void setBookingstatus(boolean inputs){
+     isBooked=inputs;
+    }
+    /*public boolean inputs (){
+        if (phoneNumber ){
+            return
+        }
+    }*/
 
     @Override
     public String toString() {
