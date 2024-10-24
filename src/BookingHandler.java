@@ -106,7 +106,7 @@ public class BookingHandler extends MenuAndInterface {
         }
         return x;
     }
-    public String findDato(int navnInput, FileHandler fileHandler){
+    /*public String findDato(int navnInput, FileHandler fileHandler){
         LocalDate x ="";
         for (Appointment a : fileHandler.getList() ){
             x= a.getname();
@@ -114,6 +114,8 @@ public class BookingHandler extends MenuAndInterface {
         }
         return x;
     }
+
+     */
     
 
 
