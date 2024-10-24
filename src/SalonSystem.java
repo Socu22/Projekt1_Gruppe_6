@@ -1,6 +1,8 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 // Konsolbaseret single-user bookingsystem.
 public class SalonSystem {
@@ -20,7 +22,7 @@ public class SalonSystem {
             System.out.println("3: Vis ledige tider");
             System.out.println("4: Registrer ferie- eller lukkedage");
             System.out.println("5: Se økonomioplysniger (kræver adgangskode)");
-            System.out.println("6: Registrer betaling");
+            System.out.println("6: Registrer Økonomi");
             System.out.println("7: Giv kredit");
             System.out.println("8: Afslut program");
 
@@ -74,27 +76,16 @@ public class SalonSystem {
                     paymentHandler2.showFinancialData(password);
                     break;
 
-                case 6: // Indregistrering af betaling
-                    System.out.println("Indtast kundens navn:");
-                    String payingCustomer = scanner.nextLine();
-                    Customer customerPay = new Customer(payingCustomer);
+                case 6: // Indregistrering af økonomi ( Betaling og kredit )
+                    PaymentHandler paymentHandler = new PaymentHandler();  // <-- Opretter PaymentHandler
+                    paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
 
-                    System.out.println("Indtast beløb for betaling:");
-                    double amount = scanner.nextDouble();
-                    scanner.nextLine(); // Sørger for at den ikke bugger
-
-                    paymentHandler2.registerPayment(customerPay, amount);
+                    // Når PaymentHandler er færdig, returnerer vi til hovedmenuen i SalonSystem
+                    System.out.println("Tilbage til hovedmenuen i Harry's Salon");
                     break;
 
-                case 7: // Giv kredit til kunde
-                    System.out.println("Indtast kundens navn:");
-                    String creditCustomer = scanner.nextLine();
-                    Customer customerCredit = new Customer(creditCustomer);
 
-                    paymentHandler2.setCredit(customerCredit);
-                    break;
-
-                case 8: // Afslutter programmet
+                case 7: // Afslutter programmet
                     running = false;
                     System.out.println("Programmet afsluttes.");
                     break;
