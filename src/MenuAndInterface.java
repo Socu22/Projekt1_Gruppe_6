@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class MenuAndInterface {
@@ -11,7 +12,8 @@ public class MenuAndInterface {
       BookingHandler b = new BookingHandler();
       f=new FileHandler();
         System.out.println(b.findAppointment_WithId(1,f));
-        System.out.println(b.findAppointment_WithNavn("Lucas",f));
+        System.out.println(b.findAppointment_WithNavn("Empty",f));
+        System.out.println(b.findAppointment_WithDate(LocalDate.of(2024,1,1),f));
 
     }
 

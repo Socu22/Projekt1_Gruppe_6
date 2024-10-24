@@ -116,23 +116,28 @@ public class BookingHandler {
     public Appointment findAppointment_WithDate(LocalDate dateInput, FileHandler fileHandler){
         Appointment x = null;
         for (Appointment a : fileHandler.getList() ){
-            if(dateInput==a.getDate()){
+            String formaterDateInput =dateInput.toString();
+            String formaterA =a.getDate().toString();
+            if(Objects.equals(formaterDateInput,formaterA)){
                 x=a;
             }
 
         }
         return x;
     }
-    public Appointment findAppointment_WithTimeSlot(LocalDate timeInput, FileHandler fileHandler){
+    /*public Appointment findAppointment_WithTimeSlot(LocalDate timeInput, FileHandler fileHandler){
         Appointment x = null;
         for (Appointment a : fileHandler.getList() ){
-            if(timeInput==a.getDate()){
+
+            if(Objects.equals(formaterTimeInput,formaterA)){
                 x=a;
             }
 
         }
         return x;
     }
+
+     */
 
 
     
