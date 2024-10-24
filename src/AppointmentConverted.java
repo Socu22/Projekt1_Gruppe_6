@@ -22,7 +22,7 @@ public class AppointmentConverted {
         this.date=(appointmentForConvert.getDate().toString());
         this.timeSlot=appointmentForConvert.getTime().toString();
         this.name=appointmentForConvert.getname();
-        this.phoneNumber = appointmentForConvert.getPhoneNumer();
+        this.phoneNumber = appointmentForConvert.getPhoneNumber();
         this.price = 700.00;
         this.isBooked = false;
     }
@@ -37,6 +37,14 @@ public class AppointmentConverted {
 
     public int getBookingId() {
         return bookingId;
+    }
+
+    public boolean isBooked() {
+        return isBooked;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     String getname(){
