@@ -1,3 +1,4 @@
+import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Scanner;
@@ -7,7 +8,7 @@ import java.util.List;
 // Konsolbaseret single-user bookingsystem.
 public class SalonSystem {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
 
@@ -26,76 +27,78 @@ public class SalonSystem {
             System.out.println("7: Giv kredit");
             System.out.println("8: Afslut program");
 
-            int choice = scanner.nextInt();
-            scanner.nextLine();
+            if (scanner.hasNextInt()) {
+                int choice = scanner.nextInt();
+                scanner.nextLine();
 
-            switch (choice) {
-                case 1: // Oprettelse af aftale
-                    System.out.println("Indtast kundens navn:");
-                    String name = scanner.nextLine();
-                    Customer customer = new Customer(name);
+                switch (choice) {
+                    case 1: // Oprettelse af aftale
+                        System.out.println("Indtast kundens navn:");
+                        String name = scanner.nextLine();
+                        Customer customer = new Customer(name);
 
-                    System.out.println("Indtast aftaledato (ÅR-MÅNED-DAG)");
-                    LocalDate date = LocalDate.parse(scanner.nextLine());
+                        System.out.println("Indtast aftaledato (ÅR-MÅNED-DAG)");
+                        LocalDate date = LocalDate.parse(scanner.nextLine());
 
-                    System.out.println("Indtast aftaletidspunkt (TIME:MINUT)");
-                    LocalTime time = LocalTime.parse(scanner.nextLine());
+                        System.out.println("Indtast aftaletidspunkt (TIME:MINUT)");
+                        LocalTime time = LocalTime.parse(scanner.nextLine());
 
-                    paymentHandler2.createAppointment(date, time, customer);
-                    break;
+                        paymentHandler2.createAppointment(date, time, customer);
+                        break;
 
-                case 2: // Slet en aftale
-                    System.out.println("Indtast kundens navn:");
-                    String customerToDelete = scanner.nextLine();
-                    Customer customerDel = new Customer(customerToDelete);
+                    case 2: // Slet en aftale
+                        System.out.println("Indtast kundens navn:");
+                        String customerToDelete = scanner.nextLine();
+                        Customer customerDel = new Customer(customerToDelete);
 
-                    System.out.println("Indtast aftalte dato (ÅR-MÅNED-DAG)");
-                    LocalDate dateToDelete = LocalDate.parse(scanner.nextLine());
+                        System.out.println("Indtast aftalte dato (ÅR-MÅNED-DAG)");
+                        LocalDate dateToDelete = LocalDate.parse(scanner.nextLine());
 
-                    paymentHandler2.deleteAppointment(dateToDelete, customerDel);
-                    break;
+                        paymentHandler2.deleteAppointment(dateToDelete, customerDel);
+                        break;
 
-                case 3: // Viser ledige tider
-                    System.out.println("Indtast ønsket dato (ÅR-MÅNED-DAG)");
-                    LocalDate dateForTimes = LocalDate.parse(scanner.nextLine());
+                    case 3: // Viser ledige tider
+                        System.out.println("Indtast ønsket dato (ÅR-MÅNED-DAG)");
+                        LocalDate dateForTimes = LocalDate.parse(scanner.nextLine());
 
-                    paymentHandler2.showAvailableTimes(dateForTimes);
-                    break;
+                        paymentHandler2.showAvailableTimes(dateForTimes);
+                        break;
 
-                case 4: // Ferie/lukkedage
-                    System.out.println("Indtast feriedato (ÅR-MÅNED-DAG)");
-                    LocalDate holiday = LocalDate.parse(scanner.nextLine());
+                    case 4: // Ferie/lukkedage
+                        System.out.println("Indtast feriedato (ÅR-MÅNED-DAG)");
+                        LocalDate holiday = LocalDate.parse(scanner.nextLine());
 
-                    paymentHandler2.registerHoliday(holiday);
-                    break;
+                        paymentHandler2.registerHoliday(holiday);
+                        break;
 
-                case 5: // Økonomioplysninger - kræver password
-                    System.out.println("Indtast adgangskode:");
-                    String password = scanner.nextLine();
+                    case 5: // Økonomioplysninger - kræver password
+                        System.out.println("Indtast adgangskode:");
+                        String password = scanner.nextLine();
 
-                    paymentHandler2.showFinancialData(password);
-                    break;
+                        paymentHandler2.showFinancialData(password);
+                        break;
 
-                case 6: // Indregistrering af økonomi ( Betaling og kredit )
-                    PaymentHandler paymentHandler = new PaymentHandler();  // <-- Opretter PaymentHandler
-                    paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
+                    case 6: // Indregistrering af økonomi ( Betaling og kredit )
+                        PaymentHandler paymentHandler = new PaymentHandler();  // <-- Opretter PaymentHandler
+                        paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
 
-                    // Når PaymentHandler er færdig, returnerer vi til hovedmenuen i SalonSystem
-                    System.out.println("Tilbage til hovedmenuen i Harry's Salon");
-                    break;
+                        // Når PaymentHandler er færdig, returnerer vi til hovedmenuen i SalonSystem
+                        System.out.println("Tilbage til hovedmenuen i Harry's Salon");
+                        break;
 
 
-                case 7: // Afslutter programmet
-                    running = false;
-                    System.out.println("Programmet afsluttes.");
-                    break;
+                    case 7: // Afslutter programmet
+                        running = false;
+                        System.out.println("Programmet afsluttes.");
+                        break;
 
-                default:
-                    System.out.println("Ugyldigt valg. Prøv igen.");
-                    break;
+                    default:
+                        System.out.println("Ugyldigt valg. Prøv igen.");
+                        break;
+                }
             }
+            scanner.close();
         }
-        scanner.close();
     }
 }
 
