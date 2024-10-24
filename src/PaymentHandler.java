@@ -176,8 +176,6 @@ public class PaymentHandler {
                     System.out.println("Ugyldigt valg, prøv igen.");
             }
         }
-
-        scanner.close();
     }
 
     public static void main(String[] args) throws FileNotFoundException {
