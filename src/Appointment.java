@@ -14,10 +14,19 @@ public class Appointment {
     private LocalDate date;
     private LocalTime timeSlot;
     private double price;
-    private boolean isBooked;
+    private boolean isBooked = false;
 
 
+    Appointment(AppointmentConverted aC){
 
+        this.bookingId =accountCounter++;
+        this.date=LocalDate.parse(aC.getDate());
+        this.timeSlot=LocalTime.parse(aC.getTime());
+        this.name=aC.getname();
+        this.phoneNumber = aC.getPhoneNumer();
+        this.price =700.00;
+        this.isBooked=false;
+    }
 
     Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment, String name, int phonenumber){
 
@@ -28,13 +37,31 @@ public class Appointment {
         this.phoneNumber =phonenumber;
         this.price = 700.00;
         this.isBooked = false;
+    }
 
-
-
+    Boolean setBooked(){
+        isBooked = true;
+        return true;
     }
 
     public static void setAccountCounter(int accountCounter) {
         Appointment.accountCounter = accountCounter;
+    }
+
+    String getname(){
+        return name;
+    }
+
+    LocalDate getDate(){
+        return date;
+    }
+
+    LocalTime getTime(){
+        return timeSlot;
+    }
+
+    int getPhoneNumer(){
+        return phoneNumber;
     }
 
     public void setName(String name) {
@@ -45,16 +72,8 @@ public class Appointment {
         return bookingId;
     }
 
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public LocalTime getTimeSlot() {
-        return timeSlot;
-    }
-
     public String isItBooked(){
-        if (this.isBooked = true){
+        if (this.isBooked == true){
             return "BOOKED";
         }
         else {
