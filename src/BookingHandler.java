@@ -49,9 +49,11 @@ public class BookingHandler extends MenuAndInterface {
 
 
 
-    public void nextDay(){
+    /*public void nextDay(){
         Collections.addAll(DontFuckTHisappointmentsArrayList,timeSlotInADay);
     }
+
+     */
 
 
     public void changeSpecificBooking(int dayNo, int posOneToEight, String newName) {
@@ -73,6 +75,7 @@ public class BookingHandler extends MenuAndInterface {
         if (index < DontFuckTHisappointmentsArrayList.size()) {DontFuckTHisappointmentsArrayList.set(index, null);  // Replace existing appointment
         } else {System.out.println("Error: Invalid booking index.");}}*/
     }
+
     public void showBooking(){
         for (int i = 0; i < DontFuckTHisappointmentsArrayList.size(); i++) {
             System.out.println(DontFuckTHisappointmentsArrayList.get(i));
@@ -85,6 +88,35 @@ public class BookingHandler extends MenuAndInterface {
         }
         return currentAppointment;
     }
+
+    public int findId(int idInput, FileHandler fileHandler){
+        int x =0;
+        for (Appointment a : fileHandler.getList() ){
+           if(idInput==a.getBookingId()){x= a.getBookingId();}else{
+               System.out.println("not the right id ");
+           }
+
+        }
+        return x;
+    }
+    public String findNavn(String navnInput, FileHandler fileHandler){
+        String x ="";
+        for (Appointment a : fileHandler.getList() ){
+            x= a.getname();
+
+        }
+        return x;
+    }
+    /*public String findDato(int navnInput, FileHandler fileHandler){
+        LocalDate x ="";
+        for (Appointment a : fileHandler.getList() ){
+            x= a.getname();
+
+        }
+        return x;
+    }
+
+     */
     
 
 

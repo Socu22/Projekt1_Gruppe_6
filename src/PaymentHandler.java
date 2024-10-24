@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.FileNotFoundException; // Tilføjet for at håndtere filfejl
 
 public class PaymentHandler {
 
@@ -11,9 +12,14 @@ public class PaymentHandler {
     // Arraylisten er public så den kan tilgås af andre klasser, som fx vores kalender
     public ArrayList<Credit> creditList;
 
-    // Jeg starter arraylisten
-    public PaymentHandler() {
+    // Tilføj FileHandler
+    // Dette objekt vil blive brugt til at håndtere aftaler, som kommer fra JSON-filen via FileHandler-klassen
+    private FileHandler fileHandler;
+
+    // Jeg starter arraylisten og FileHandler
+    public PaymentHandler() throws FileNotFoundException {
         creditList = new ArrayList<>();
+        fileHandler = new FileHandler();
     }
 
     // Jeg laver en kredit-klasse for at gemme kredit hvor en aftale igennem et appointment-id
@@ -42,11 +48,12 @@ public class PaymentHandler {
         // Returnere et aftale id
         public int getAppointmentId() {
             return appointmentId;
-
         }
+
+
     }
 
-    //Jeg laver en metode der skal kunne registrere en betaling
+    // Jeg laver en metode der skal kunne registrere en betaling
     // Metoden tager summen af prisen for en aftale sammen med add-ons og uskrifter det samlet
     public void registerPayment(double addons) {
         double totalAmount = baseAmount + addons;
@@ -60,7 +67,6 @@ public class PaymentHandler {
         Credit credit = new Credit(appointmentId, totalAmount);
         creditList.add(credit);
         System.out.println("Kredit er registreret for aftale nr: " + appointmentId + " Med pris: " + totalAmount + " kr.");
-
     }
 
     // Jeg laver en metode der skal kunne betale kredit baseret på aftale nummer
@@ -88,7 +94,19 @@ public class PaymentHandler {
         if (!found) {
             System.out.println("Ingen kredit blev fundet for aftale nr: " + appointmentId);
         }
+    }
 
+    // Ny metode til at validere appointmentId
+    // Denne metode tjekker, om det indtastede appointmentId findes i listen af aftaler fra FileHandler
+    private boolean validateAppointmentId(int appointmentId) {
+        // Tjek om appointmentId findes i FileHandler's liste af aftaler
+        ArrayList<Appointment> appointments = fileHandler.getList();
+        for (Appointment appointment : appointments) {
+            if (appointment.getBookingId() == appointmentId) {
+                return true; // Gyldig appointmentId
+            }
+        }
+        return false; // Ugyldig appointmentId
     }
 
     // Jeg opretter en metode der viser menuen og tilføjer en scanner så vi kan tage imod input
@@ -110,26 +128,42 @@ public class PaymentHandler {
             switch (choice) {
                 // Case 1 er til at registrere en betaling
                 case 1:
-                    System.out.println("Indtast eventuelle ekstra køb i kr: ");
-                    double addons = scanner.nextDouble();
-                    registerPayment(addons);
+                    System.out.println("Indtast aftale nummer: ");
+                    int appointmentId = scanner.nextInt();
+                    // Valider appointmentId ved hjælp af FileHandler
+                    if (validateAppointmentId(appointmentId)) { // Ændring: Tjek om appointmentId er gyldig
+                        System.out.println("Indtast eventuelle ekstra køb i kr: ");
+                        double addons = scanner.nextDouble();
+                        registerPayment(addons);
+                    } else {
+                        System.out.println("Ugyldigt aftale nummer."); // Ændring: Besked ved ugyldigt appointmentId
+                    }
                     break;
 
                 // Case 2 er til at registrere kredit på et aftale nummer
                 case 2:
                     System.out.println("Indtast aftale nummer: ");
-                    int appointmentId = scanner.nextInt();
-                    System.out.println("Indtast eventuelle ekstra køb i kr: ");
-                    addons = scanner.nextDouble();
-                    scanner.nextLine();
-                    registerCredit(appointmentId, addons);
+                    appointmentId = scanner.nextInt();
+                    // Valider appointmentId ved hjælp af FileHandler
+                    if (validateAppointmentId(appointmentId)) { // Ændring: Tjek om appointmentId er gyldig
+                        System.out.println("Indtast eventuelle ekstra køb i kr: ");
+                        double addons = scanner.nextDouble();
+                        registerCredit(appointmentId, addons);
+                    } else {
+                        System.out.println("Ugyldigt aftale nummer."); // Ændring: Besked ved ugyldigt appointmentId
+                    }
                     break;
 
                 // Case 3 er til at betale udestående kredit
                 case 3:
                     System.out.println("Indtast aftale nummer: ");
                     appointmentId = scanner.nextInt();
-                    payCredit(appointmentId);
+                    // Valider appointmentId ved hjælp af FileHandler
+                    if (validateAppointmentId(appointmentId)) { // Ændring: Tjek om appointmentId er gyldig
+                        payCredit(appointmentId);
+                    } else {
+                        System.out.println("Ugyldigt aftale nummer."); // Ændring: Besked ved ugyldigt appointmentId
+                    }
                     break;
 
                 // Case 4 er til at afslutte programmet
@@ -140,16 +174,13 @@ public class PaymentHandler {
 
                 default:
                     System.out.println("Ugyldigt valg, prøv igen.");
-
             }
         }
-
-        scanner.close();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         // Vi opretter et objekt "handler" som man vil kunne hente fra andre steder af senere hen
-        PaymentHandler handler = new PaymentHandler();
+        PaymentHandler handler = new PaymentHandler(); // Ændring: Tilføjet throws FileNotFoundException for at håndtere filfejl
         handler.startMenu();
     }
 }
