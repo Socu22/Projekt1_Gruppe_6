@@ -44,6 +44,7 @@ public class Appointment {
         return bookingId;
     }
 
+
     @Override
     public String toString() {
         return String.format("Appointment nr %d,Date: "+date+", TimeSlot(1-n): %d  ,Name: %s, Phone Number: %s, Mail: %s,", bookingId,timeSlot,name, phoneNumber, mail);
