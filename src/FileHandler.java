@@ -10,7 +10,7 @@ import com.google.gson.reflect.TypeToken;
 
 public class FileHandler {
     //The arraylist of appointments in memory
-    private ArrayList<TestObject> listOfTestObjects = new ArrayList<>();
+    private ArrayList<Appointment> listOfAppointments = new ArrayList<>();
 
     //Creates a Gsonbuilder to convert variables into Json. Will be used to convert the arraylist of appointments to and from Json.
     static Gson gson = new GsonBuilder()
@@ -21,12 +21,12 @@ public class FileHandler {
 
     //Constructor for filehandler object, starts by loading the calendar file.
     FileHandler () throws FileNotFoundException {
-        this.listOfTestObjects = this.loadCalendar();
+        this.listOfAppointments = this.loadCalendar();
     }
 
     //Method for accessing the list of appointments in the filehandler
     ArrayList getList(){
-        return listOfTestObjects;
+        return listOfAppointments;
     }
 
     //Method for saving the calendar, should be done after changes are made to the list
@@ -36,11 +36,15 @@ public class FileHandler {
 
     //Loads the calendar from the file
     ArrayList loadCalendar() throws FileNotFoundException {
-        FileReader jsonReader = new FileReader("TestFile.json");
+        FileReader jsonReader = new FileReader("src//TestFile2.json");
         JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
+        System.out.println("List converted");
 
-        Type testObjectListType = new TypeToken<ArrayList<TestObjectForSerialization>>() {}.getType();
-        ArrayList<TestObjectForSerialization> deserializedList = gson.fromJson(jsonText, testObjectListType);
+        Type appointmentListType = new TypeToken<ArrayList<AppointmentConverted>>() {}.getType();
+        System.out.println("Type created");
+        ArrayList<AppointmentConverted> deserializedList = gson.fromJson(jsonText, appointmentListType);
+        System.out.println("List deserialized");
+        System.out.println(deserializedList);
         return convertToDates(deserializedList);
     }
 
@@ -50,11 +54,11 @@ public class FileHandler {
     }
 
     //Converts the json file into a list of appointments.
-    ArrayList convertToDates(ArrayList<TestObjectForSerialization> deSerializedList){
-        ArrayList<TestObject> convertedlist = new ArrayList<>();
-        for (TestObjectForSerialization obj: deSerializedList){
-            TestObject t = new TestObject(obj);
-            convertedlist.add(t);
+    ArrayList convertToDates(ArrayList<AppointmentConverted> deSerializedList){
+        ArrayList<Appointment> convertedlist = new ArrayList<>();
+        for (AppointmentConverted obj: deSerializedList){
+            Appointment a = new Appointment(obj);
+            convertedlist.add(a);
         }
         return convertedlist;
     }
