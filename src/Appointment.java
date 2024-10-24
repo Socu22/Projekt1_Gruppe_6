@@ -83,6 +83,7 @@ public class Appointment {
         this.bookingId=recievedBookingid;
     }
 
+
     public String isItBooked(){
         if (this.isBooked == true){
             return "BOOKED";
