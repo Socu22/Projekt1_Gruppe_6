@@ -49,6 +49,10 @@ public class Appointment {
         return date;
     }
 
+    public LocalTime getTimeSlot() {
+        return timeSlot;
+    }
+
     public String isItBooked(){
         if (this.isBooked = true){
             return "BOOKED";

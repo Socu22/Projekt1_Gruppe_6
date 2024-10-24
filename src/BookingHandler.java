@@ -17,20 +17,21 @@ public class BookingHandler extends MenuAndInterface {
             //System.out.println(DontFuckTHisappointmentsArrayList.get(0)); //confirms that appointment is deleted (deleteBookingToSpecificDay)
             b.showBooking();*/
         BookingHandler b2 = new BookingHandler();
-        //b2.createAllAppointments();
+        b2.createAllAppointments();
         b2.changeSpecificBooking(1,1,"Jake Fucktart");
         b2.showBooking();
+        b2.getAppointmentDatoAndTid(LocalDate.now(),LocalDate.now());
     }
     static  int index;
     static Appointment currentAppointment=null;
     static Appointment[] timeSlotInADay= new Appointment[8];
     static int bookingNr = 0;
 
-    /*public void createAllAppointments(){
+    public void createAllAppointments(){
         for (int i = 0; i < 366; i++) {
             nextDay();
             for (int j = 0; j < timeSlotInADay.length ; j++) {
-                timeSlotInADay[j]= new Appointment();
+                timeSlotInADay[j]= new Appointment(null,null,null,000000);
             }
         }
         //some kind of bug with ekstra fields in arrayList but ti works now with the code
@@ -44,13 +45,13 @@ public class BookingHandler extends MenuAndInterface {
         DontFuckTHisappointmentsArrayList.removeFirst();
 }
 
-     */
 
-    /*public void nextDay(){
+
+    public void nextDay(){
         Collections.addAll(DontFuckTHisappointmentsArrayList,timeSlotInADay);
     }
 
-     */
+
     public void changeSpecificBooking(int dayNo, int posOneToEight, String newName) {
         index = (dayNo - 1) * 8 + (posOneToEight - 1);
         if (index < DontFuckTHisappointmentsArrayList.size()) {
@@ -87,9 +88,11 @@ public class BookingHandler extends MenuAndInterface {
         
         for(Appointment a : DontFuckTHisappointmentsArrayList){
             if (date==a.getDate()){
-                return a.getDate();
+
             }
-            
+
+
+
         }
     }
     
