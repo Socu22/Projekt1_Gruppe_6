@@ -1,7 +1,9 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Collections;
 
 public class BookingHandler extends MenuAndInterface {
+    static ArrayList<Appointment> DontFuckTHisappointmentsArrayList = new ArrayList<>();
     public static void main(String[] args) {
         /*BookingHandler b = new BookingHandler(); //test1
             //b.createBooking(2); //create in a specific timestamp
@@ -17,17 +19,16 @@ public class BookingHandler extends MenuAndInterface {
             //System.out.println(DontFuckTHisappointmentsArrayList.get(0)); //confirms that appointment is deleted (deleteBookingToSpecificDay)
             b.showBooking();*/
         BookingHandler b2 = new BookingHandler();
-        b2.createAllAppointments();
+       // b2.createAllAppointments();
         b2.changeSpecificBooking(1,1,"Jake Fucktart");
         b2.showBooking();
-        b2.getAppointmentDatoAndTid(LocalDate.now(),LocalDate.now());
     }
     static  int index;
     static Appointment currentAppointment=null;
     static Appointment[] timeSlotInADay= new Appointment[8];
     static int bookingNr = 0;
 
-    public void createAllAppointments(){
+   /* public void createAllAppointments(){
         for (int i = 0; i < 366; i++) {
             nextDay();
             for (int j = 0; j < timeSlotInADay.length ; j++) {
@@ -44,6 +45,7 @@ public class BookingHandler extends MenuAndInterface {
         DontFuckTHisappointmentsArrayList.remove(0);;
         DontFuckTHisappointmentsArrayList.removeFirst();
 }
+    */
 
 
 
@@ -84,16 +86,8 @@ public class BookingHandler extends MenuAndInterface {
         return currentAppointment;
     }
     
-    public LocalDate getAppointmentDatoAndTid(LocalDate date, LocalDate tid){
-        
-        for(Appointment a : DontFuckTHisappointmentsArrayList){
-            if (date==a.getDate()){
-
-            }
 
 
 
-        }
-    }
-    
+
 }
