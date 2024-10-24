@@ -17,19 +17,7 @@ public class Appointment {
     private boolean isBooked;
 
 
-    Appointment(){
 
-        this.bookingId =accountCounter++;
-        this.date=LocalDate.of(2024,1,1);
-        this.timeSlot=LocalTime.of(10,00);
-        this.name="Empty";
-        this.phoneNumber =0000000000;
-        this.price =700.00;
-        this.isBooked=false;
-////
-
-
-    }
 
     Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment, String name, int phonenumber){
 
@@ -55,6 +43,10 @@ public class Appointment {
 
     public int getBookingId() {
         return bookingId;
+    }
+
+    public LocalDate getDate() {
+        return date;
     }
 
     public String isItBooked(){
