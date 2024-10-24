@@ -38,13 +38,9 @@ public class FileHandler {
     ArrayList loadCalendar() throws FileNotFoundException {
         FileReader jsonReader = new FileReader("src//TestFile2.json");
         JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
-        System.out.println("List converted");
 
         Type appointmentListType = new TypeToken<ArrayList<AppointmentConverted>>() {}.getType();
-        System.out.println("Type created");
         ArrayList<AppointmentConverted> deserializedList = gson.fromJson(jsonText, appointmentListType);
-        System.out.println("List deserialized");
-        System.out.println(deserializedList);
         return convertToDates(deserializedList);
     }
 
