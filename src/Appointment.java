@@ -26,7 +26,7 @@ public class Appointment {
         this.phoneNumber ="XXXXXXXX";
         this.price =700.00;
         this.isBooked=false;
-//
+////
 
 
     }
