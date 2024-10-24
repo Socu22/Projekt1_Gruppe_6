@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.time.LocalDate;
@@ -11,6 +12,7 @@ import com.google.gson.reflect.TypeToken;
 public class FileHandler {
     //The arraylist of appointments in memory
     private ArrayList<Appointment> listOfAppointments = new ArrayList<>();
+    private ArrayList<AppointmentConverted> convertedAppointments = new ArrayList<>();
 
     //Creates a Gsonbuilder to convert variables into Json. Will be used to convert the arraylist of appointments to and from Json.
     static Gson gson = new GsonBuilder()
@@ -19,8 +21,9 @@ public class FileHandler {
             //tells the GsonBuilder to create itself.
             .create();
 
+
     //Constructor for filehandler object, starts by loading the calendar file.
-    FileHandler () throws FileNotFoundException {
+    FileHandler () throws IOException {
         this.listOfAppointments = this.loadCalendar();
     }
 
@@ -30,13 +33,26 @@ public class FileHandler {
     }
 
     //Method for saving the calendar, should be done after changes are made to the list
-    void saveCalendar(){
-
+    void saveCalendar() throws IOException {
+        FileWriter jsonWriter = new FileWriter("src//TestFile4.json", false);
+        convertToStrings(listOfAppointments);
+        String jsonToWrite;
+        jsonWriter.write("[");
+        for (int i = 0; i<convertedAppointments.size();i++){
+            jsonToWrite = gson.toJson(convertedAppointments.get(i));
+            jsonWriter.write(jsonToWrite);
+            if (i != listOfAppointments.size()-1){
+                jsonWriter.write(",\n");
+            }
+        }
+        jsonWriter.write("\n]");
+        jsonWriter.close();
+        System.out.println("File created and saved");
     }
 
     //Loads the calendar from the file
     ArrayList loadCalendar() throws FileNotFoundException {
-        FileReader jsonReader = new FileReader("src//TestFile3.json");
+        FileReader jsonReader = new FileReader("src//TestFile4.json");
         JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
 
         Type appointmentListType = new TypeToken<ArrayList<AppointmentConverted>>() {}.getType();
@@ -45,8 +61,14 @@ public class FileHandler {
     }
 
     //Converts all objects in the list of appointments to object compatible with jSon
-    ArrayList convertToStrings(){
-        return new ArrayList<>();
+    ArrayList convertToStrings(ArrayList<Appointment> unconvertedAppointments){
+        convertedAppointments = new ArrayList<>();
+        AppointmentConverted aC;
+        for (Appointment a: unconvertedAppointments){
+            aC= new AppointmentConverted(a);
+            convertedAppointments.add(aC);
+        }
+        return convertedAppointments;
     }
 
     //Converts the json file into a list of appointments.
@@ -61,10 +83,12 @@ public class FileHandler {
 
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
         FileHandler f1 = new FileHandler();
-        System.out.println(f1.getList());
+        BookingHandler b=new BookingHandler();
+        b.findAppointment_WithId(1,f1).setName("Mikkel");
+        f1.saveCalendar();
 
         /*
         //This is an imaginary appointment coming from the software

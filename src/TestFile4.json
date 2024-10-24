@@ -1,0 +1,5761 @@
+[{
+  "bookingId": 1,
+  "name": "Mikkel",
+  "phoneNumber": 0,
+  "date": "2024-01-01",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 2,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-01",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 3,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-01",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 4,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-01",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 5,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-01",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 6,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-01",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 7,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-01",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 8,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-01",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 9,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-02",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 10,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-02",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 11,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-02",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 12,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-02",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 13,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-02",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 14,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-02",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 15,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-02",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 16,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-02",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 17,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-03",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 18,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-03",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 19,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-03",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 20,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-03",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 21,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-03",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 22,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-03",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 23,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-03",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 24,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-03",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 25,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-04",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 26,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-04",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 27,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-04",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 28,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-04",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 29,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-04",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 30,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-04",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 31,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-04",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 32,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-04",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 33,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-05",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 34,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-05",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 35,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-05",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 36,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-05",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 37,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-05",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 38,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-05",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 39,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-05",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 40,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-05",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 41,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-08",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 42,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-08",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 43,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-08",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 44,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-08",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 45,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-08",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 46,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-08",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 47,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-08",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 48,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-08",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 49,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-09",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 50,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-09",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 51,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-09",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 52,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-09",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 53,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-09",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 54,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-09",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 55,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-09",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 56,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-09",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 57,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-10",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 58,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-10",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 59,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-10",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 60,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-10",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 61,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-10",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 62,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-10",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 63,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-10",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 64,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-10",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 65,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-11",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 66,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-11",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 67,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-11",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 68,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-11",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 69,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-11",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 70,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-11",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 71,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-11",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 72,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-11",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 73,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-12",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 74,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-12",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 75,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-12",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 76,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-12",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 77,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-12",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 78,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-12",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 79,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-12",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 80,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-12",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 81,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-15",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 82,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-15",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 83,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-15",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 84,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-15",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 85,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-15",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 86,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-15",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 87,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-15",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 88,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-15",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 89,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-16",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 90,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-16",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 91,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-16",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 92,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-16",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 93,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-16",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 94,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-16",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 95,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-16",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 96,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-16",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 97,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-17",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 98,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-17",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 99,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-17",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 100,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-17",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 101,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-17",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 102,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-17",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 103,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-17",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 104,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-17",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 105,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-18",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 106,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-18",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 107,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-18",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 108,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-18",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 109,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-18",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 110,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-18",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 111,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-18",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 112,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-18",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 113,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-19",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 114,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-19",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 115,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-19",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 116,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-19",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 117,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-19",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 118,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-19",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 119,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-19",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 120,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-19",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 121,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-22",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 122,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-22",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 123,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-22",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 124,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-22",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 125,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-22",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 126,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-22",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 127,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-22",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 128,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-22",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 129,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-23",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 130,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-23",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 131,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-23",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 132,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-23",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 133,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-23",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 134,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-23",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 135,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-23",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 136,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-23",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 137,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-24",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 138,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-24",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 139,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-24",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 140,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-24",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 141,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-24",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 142,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-24",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 143,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-24",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 144,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-24",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 145,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-25",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 146,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-25",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 147,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-25",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 148,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-25",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 149,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-25",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 150,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-25",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 151,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-25",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 152,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-25",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 153,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-26",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 154,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-26",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 155,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-26",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 156,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-26",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 157,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-26",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 158,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-26",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 159,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-26",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 160,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-26",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 161,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-29",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 162,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-29",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 163,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-29",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 164,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-29",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 165,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-29",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 166,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-29",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 167,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-29",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 168,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-29",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 169,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-30",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 170,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-30",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 171,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-30",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 172,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-30",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 173,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-30",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 174,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-30",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 175,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-30",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 176,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-30",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 177,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-31",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 178,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-31",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 179,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-31",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 180,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-31",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 181,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-31",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 182,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-31",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 183,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-31",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 184,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-01-31",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 185,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-01",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 186,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-01",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 187,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-01",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 188,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-01",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 189,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-01",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 190,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-01",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 191,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-01",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 192,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-01",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 193,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-02",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 194,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-02",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 195,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-02",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 196,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-02",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 197,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-02",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 198,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-02",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 199,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-02",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 200,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-02",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 201,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-05",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 202,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-05",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 203,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-05",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 204,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-05",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 205,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-05",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 206,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-05",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 207,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-05",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 208,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-05",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 209,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-06",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 210,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-06",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 211,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-06",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 212,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-06",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 213,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-06",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 214,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-06",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 215,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-06",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 216,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-06",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 217,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-07",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 218,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-07",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 219,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-07",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 220,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-07",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 221,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-07",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 222,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-07",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 223,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-07",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 224,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-07",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 225,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-08",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 226,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-08",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 227,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-08",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 228,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-08",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 229,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-08",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 230,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-08",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 231,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-08",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 232,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-08",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 233,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-09",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 234,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-09",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 235,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-09",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 236,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-09",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 237,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-09",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 238,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-09",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 239,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-09",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 240,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-09",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 241,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-12",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 242,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-12",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 243,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-12",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 244,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-12",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 245,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-12",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 246,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-12",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 247,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-12",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 248,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-12",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 249,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-13",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 250,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-13",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 251,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-13",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 252,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-13",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 253,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-13",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 254,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-13",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 255,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-13",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 256,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-13",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 257,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-14",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 258,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-14",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 259,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-14",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 260,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-14",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 261,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-14",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 262,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-14",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 263,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-14",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 264,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-14",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 265,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-15",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 266,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-15",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 267,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-15",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 268,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-15",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 269,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-15",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 270,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-15",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 271,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-15",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 272,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-15",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 273,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-16",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 274,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-16",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 275,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-16",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 276,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-16",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 277,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-16",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 278,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-16",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 279,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-16",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 280,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-16",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 281,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-19",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 282,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-19",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 283,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-19",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 284,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-19",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 285,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-19",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 286,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-19",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 287,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-19",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 288,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-19",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 289,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-20",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 290,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-20",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 291,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-20",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 292,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-20",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 293,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-20",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 294,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-20",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 295,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-20",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 296,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-20",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 297,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-21",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 298,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-21",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 299,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-21",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 300,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-21",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 301,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-21",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 302,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-21",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 303,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-21",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 304,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-21",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 305,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-22",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 306,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-22",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 307,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-22",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 308,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-22",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 309,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-22",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 310,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-22",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 311,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-22",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 312,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-22",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 313,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-23",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 314,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-23",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 315,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-23",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 316,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-23",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 317,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-23",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 318,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-23",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 319,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-23",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 320,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-23",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 321,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-26",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 322,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-26",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 323,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-26",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 324,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-26",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 325,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-26",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 326,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-26",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 327,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-26",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 328,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-26",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 329,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-27",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 330,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-27",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 331,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-27",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 332,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-27",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 333,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-27",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 334,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-27",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 335,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-27",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 336,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-27",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 337,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-28",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 338,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-28",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 339,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-28",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 340,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-28",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 341,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-28",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 342,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-28",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 343,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-28",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 344,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-28",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 345,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-29",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 346,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-29",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 347,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-29",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 348,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-29",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 349,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-29",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 350,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-29",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 351,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-29",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 352,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-02-29",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 353,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-01",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 354,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-01",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 355,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-01",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 356,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-01",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 357,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-01",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 358,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-01",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 359,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-01",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 360,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-01",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 361,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-04",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 362,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-04",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 363,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-04",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 364,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-04",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 365,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-04",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 366,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-04",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 367,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-04",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 368,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-04",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 369,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-05",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 370,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-05",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 371,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-05",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 372,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-05",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 373,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-05",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 374,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-05",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 375,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-05",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 376,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-05",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 377,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-06",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 378,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-06",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 379,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-06",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 380,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-06",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 381,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-06",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 382,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-06",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 383,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-06",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 384,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-06",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 385,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-07",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 386,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-07",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 387,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-07",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 388,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-07",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 389,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-07",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 390,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-07",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 391,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-07",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 392,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-07",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 393,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-08",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 394,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-08",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 395,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-08",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 396,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-08",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 397,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-08",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 398,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-08",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 399,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-08",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 400,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-08",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 401,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-11",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 402,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-11",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 403,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-11",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 404,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-11",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 405,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-11",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 406,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-11",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 407,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-11",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 408,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-11",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 409,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-12",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 410,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-12",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 411,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-12",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 412,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-12",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 413,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-12",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 414,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-12",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 415,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-12",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 416,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-12",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 417,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-13",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 418,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-13",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 419,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-13",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 420,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-13",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 421,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-13",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 422,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-13",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 423,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-13",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 424,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-13",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 425,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-14",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 426,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-14",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 427,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-14",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 428,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-14",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 429,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-14",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 430,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-14",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 431,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-14",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 432,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-14",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 433,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-15",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 434,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-15",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 435,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-15",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 436,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-15",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 437,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-15",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 438,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-15",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 439,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-15",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 440,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-15",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 441,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-18",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 442,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-18",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 443,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-18",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 444,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-18",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 445,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-18",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 446,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-18",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 447,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-18",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 448,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-18",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 449,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-19",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 450,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-19",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 451,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-19",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 452,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-19",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 453,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-19",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 454,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-19",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 455,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-19",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 456,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-19",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 457,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-20",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 458,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-20",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 459,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-20",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 460,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-20",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 461,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-20",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 462,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-20",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 463,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-20",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 464,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-20",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 465,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-21",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 466,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-21",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 467,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-21",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 468,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-21",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 469,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-21",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 470,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-21",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 471,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-21",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 472,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-21",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 473,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-22",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 474,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-22",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 475,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-22",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 476,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-22",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 477,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-22",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 478,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-22",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 479,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-22",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 480,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-22",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 481,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-25",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 482,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-25",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 483,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-25",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 484,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-25",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 485,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-25",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 486,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-25",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 487,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-25",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 488,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-25",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 489,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-26",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 490,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-26",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 491,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-26",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 492,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-26",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 493,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-26",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 494,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-26",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 495,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-26",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 496,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-26",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 497,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-27",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 498,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-27",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 499,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-27",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 500,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-27",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 501,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-27",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 502,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-27",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 503,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-27",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 504,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-27",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 505,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-28",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 506,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-28",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 507,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-28",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 508,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-28",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 509,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-28",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 510,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-28",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 511,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-28",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 512,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-28",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 513,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-29",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 514,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-29",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 515,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-29",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 516,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-29",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 517,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-29",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 518,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-29",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 519,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-29",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 520,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-03-29",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 521,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-01",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 522,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-01",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 523,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-01",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 524,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-01",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 525,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-01",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 526,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-01",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 527,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-01",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 528,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-01",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 529,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-02",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 530,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-02",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 531,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-02",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 532,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-02",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 533,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-02",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 534,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-02",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 535,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-02",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 536,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-02",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 537,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-03",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 538,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-03",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 539,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-03",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 540,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-03",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 541,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-03",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 542,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-03",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 543,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-03",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 544,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-03",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 545,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-04",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 546,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-04",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 547,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-04",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 548,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-04",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 549,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-04",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 550,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-04",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 551,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-04",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 552,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-04",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 553,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-05",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 554,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-05",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 555,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-05",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 556,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-05",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 557,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-05",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 558,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-05",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 559,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-05",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 560,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-05",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 561,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-08",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 562,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-08",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 563,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-08",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 564,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-08",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 565,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-08",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 566,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-08",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 567,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-08",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 568,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-08",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 569,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-09",
+  "timeSlot": "10:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 570,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-09",
+  "timeSlot": "11:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 571,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-09",
+  "timeSlot": "12:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 572,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-09",
+  "timeSlot": "13:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 573,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-09",
+  "timeSlot": "14:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 574,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-09",
+  "timeSlot": "15:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 575,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-09",
+  "timeSlot": "16:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+},
+{
+  "bookingId": 576,
+  "name": "Empty",
+  "phoneNumber": 0,
+  "date": "2024-04-09",
+  "timeSlot": "17:00",
+  "price": 0.0,
+  "credit": 0.0,
+  "isBooked": false
+}
+]
