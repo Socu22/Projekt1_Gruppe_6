@@ -25,7 +25,7 @@ public class FileHandler {
     }
 
     //Method for accessing the list of appointments in the filehandler
-    ArrayList getList(){
+    ArrayList<Appointment> getList(){
         return listOfAppointments;
     }
 
