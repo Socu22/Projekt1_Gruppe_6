@@ -36,7 +36,7 @@ public class FileHandler {
 
     //Loads the calendar from the file
     ArrayList loadCalendar() throws FileNotFoundException {
-        FileReader jsonReader = new FileReader("src//TestFile2.json");
+        FileReader jsonReader = new FileReader("src//TestFile3.json");
         JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
 
         Type appointmentListType = new TypeToken<ArrayList<AppointmentConverted>>() {}.getType();
