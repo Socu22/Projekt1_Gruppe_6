@@ -149,7 +149,7 @@ class PaymentHandler2 {
             appointments.add(new Appointment2(date, time, customer));
             System.out.println("Aftale oprettet for " + customer.name + " på " + date + " kl " + time);
         } else {
-            System.out.println("Salonen holder lukket i dette tidsinterval eller er på ferie.");
+            System.out.println("Salonen holder lukket i dette tidsinterval, på ferie eller i weekenden.");
         }
     }
 
@@ -159,6 +159,12 @@ class PaymentHandler2 {
     }
 
     public void showAvailableTimes(LocalDate date) {
+        if (date.getDayOfWeek() == java.time.DayOfWeek.SATURDAY || date.getDayOfWeek() == java.time.DayOfWeek.SUNDAY) {
+            System.out.println("Salonen er lukket i weekenden på " + date + ".");
+            System.out.println("");
+            return;
+        }
+
         if (!holidays.contains(date)) {
             System.out.println("Ledige tider på " + date + ":");
             for (LocalTime time = OPENING_TIME; time.isBefore(CLOSING_TIME); time = time.plusMinutes(60)) {
@@ -181,8 +187,12 @@ class PaymentHandler2 {
         }
     }
 
-
     private boolean isSalonOpen(LocalDate date, LocalTime time) {
+        // Tjek for weekender
+        if (date.getDayOfWeek() == java.time.DayOfWeek.SATURDAY || date.getDayOfWeek() == java.time.DayOfWeek.SUNDAY) {
+            return false;
+        }
+        // Tjek for feriedage og åbningstider
         return !holidays.contains(date) && (time.isAfter(OPENING_TIME.minusSeconds(1)) && time.isBefore(CLOSING_TIME));
     }
 
@@ -210,4 +220,4 @@ class PaymentHandler2 {
             System.out.println("Forkert adgangskode");
         }
     }
-    }
+}
