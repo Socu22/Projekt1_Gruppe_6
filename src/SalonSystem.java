@@ -24,8 +24,7 @@ public class SalonSystem {
             System.out.println("4: Registrer ferie- eller lukkedage");
             System.out.println("5: Se økonomioplysniger (kræver adgangskode)");
             System.out.println("6: Registrer Økonomi");
-            System.out.println("7: Giv kredit");
-            System.out.println("8: Afslut program");
+            System.out.println("7: Afslut program");
 
             if (scanner.hasNextInt()) {
                 int choice = scanner.nextInt();

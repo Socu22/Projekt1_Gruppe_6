@@ -119,7 +119,7 @@ public class PaymentHandler {
             System.out.println("1. Registrer betaling");
             System.out.println("2. Registrer kredit");
             System.out.println("3. Betal kredit");
-            System.out.println("4. Afslut");
+            System.out.println("4. Tilbage til hovedmenu");
 
             // Scanneren kan nu modtage et input fra brugeren mellem 1-4
             int choice = scanner.nextInt();
@@ -168,7 +168,7 @@ public class PaymentHandler {
 
                 // Case 4 er til at afslutte programmet
                 case 4:
-                    System.out.println("Afslutter programmet.");
+                    System.out.println("Går tilbage til hovedmenu.");
                     exit = true;
                     break;
 
