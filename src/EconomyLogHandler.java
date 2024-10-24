@@ -7,7 +7,7 @@ public class EconomyLogHandler {
    /* private FileHandler fileHandler;
 
 
-    public void seeEarnings() { // metode som printer regninger for en angiven dato
+    public void seeEarnings() { // metode som printer regninger for en angiven datoo
 
         System.out.println("Skriv en dato  ÅR-MÅNED-DAG");
 
