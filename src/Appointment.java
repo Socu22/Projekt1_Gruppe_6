@@ -8,9 +8,9 @@ public class Appointment {
     }
 
     static int accountCounter=1;
-    private int bookingId =0;
-    private String name="";
-    private String phoneNumber ="";
+    private int bookingId = 0;
+    private String name;
+    private int phoneNumber;
     private LocalDate date;
     private LocalTime timeSlot;
     private double price;
@@ -31,13 +31,13 @@ public class Appointment {
 
     }
 
-    Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment){
+    Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment, String name, int phonenumber){
 
         this.bookingId =accountCounter++;
-        this.date=LocalDate.of(2024,1,1);
-        this.timeSlot=LocalTime.of(10,00);
-        this.name="Empty";
-        this.phoneNumber ="XXXXXXXX";
+        this.date=dateForAppointment;
+        this.timeSlot=timeForAppointment;
+        this.name=name;
+        this.phoneNumber =phonenumber;
         this.price = 700.00;
         this.isBooked = false;
 
