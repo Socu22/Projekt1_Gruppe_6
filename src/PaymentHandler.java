@@ -99,14 +99,13 @@ public class PaymentHandler {
     // Ny metode til at validere appointmentId
     // Denne metode tjekker, om det indtastede appointmentId findes i listen af aftaler fra FileHandler
     private boolean validateAppointmentId(int appointmentId) {
-        // Tjek om appointmentId findes i FileHandler's liste af aftaler
         ArrayList<Appointment> appointments = fileHandler.getList();
         for (Appointment appointment : appointments) {
             if (appointment.getBookingId() == appointmentId) {
                 return true; // Gyldig appointmentId
             }
         }
-        return false; // Ugyldig appointmentId
+        return false;
     }
 
     // Jeg opretter en metode der viser menuen og tilføjer en scanner så vi kan tage imod input
@@ -131,12 +130,12 @@ public class PaymentHandler {
                     System.out.println("Indtast aftale nummer: ");
                     int appointmentId = scanner.nextInt();
                     // Valider appointmentId ved hjælp af FileHandler
-                    if (validateAppointmentId(appointmentId)) { // Ændring: Tjek om appointmentId er gyldig
+                    if (validateAppointmentId(appointmentId)) {
                         System.out.println("Indtast eventuelle ekstra køb i kr: ");
                         double addons = scanner.nextDouble();
                         registerPayment(addons);
                     } else {
-                        System.out.println("Ugyldigt aftale nummer."); // Ændring: Besked ved ugyldigt appointmentId
+                        System.out.println("Ugyldigt aftale nummer.");
                     }
                     break;
 
@@ -144,13 +143,12 @@ public class PaymentHandler {
                 case 2:
                     System.out.println("Indtast aftale nummer: ");
                     appointmentId = scanner.nextInt();
-                    // Valider appointmentId ved hjælp af FileHandler
-                    if (validateAppointmentId(appointmentId)) { // Ændring: Tjek om appointmentId er gyldig
+                    if (validateAppointmentId(appointmentId)) {
                         System.out.println("Indtast eventuelle ekstra køb i kr: ");
                         double addons = scanner.nextDouble();
                         registerCredit(appointmentId, addons);
                     } else {
-                        System.out.println("Ugyldigt aftale nummer."); // Ændring: Besked ved ugyldigt appointmentId
+                        System.out.println("Ugyldigt aftale nummer.");
                     }
                     break;
 
@@ -158,11 +156,10 @@ public class PaymentHandler {
                 case 3:
                     System.out.println("Indtast aftale nummer: ");
                     appointmentId = scanner.nextInt();
-                    // Valider appointmentId ved hjælp af FileHandler
-                    if (validateAppointmentId(appointmentId)) { // Ændring: Tjek om appointmentId er gyldig
+                    if (validateAppointmentId(appointmentId)) {
                         payCredit(appointmentId);
                     } else {
-                        System.out.println("Ugyldigt aftale nummer."); // Ændring: Besked ved ugyldigt appointmentId
+                        System.out.println("Ugyldigt aftale nummer.");
                     }
                     break;
 
@@ -179,8 +176,7 @@ public class PaymentHandler {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        // Vi opretter et objekt "handler" som man vil kunne hente fra andre steder af senere hen
-        PaymentHandler handler = new PaymentHandler(); // Ændring: Tilføjet throws FileNotFoundException for at håndtere filfejl
+        PaymentHandler handler = new PaymentHandler();
         handler.startMenu();
     }
 }
