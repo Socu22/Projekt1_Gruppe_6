@@ -45,9 +45,11 @@ public class BookingHandler extends MenuAndInterface {
 
      */
 
-    public void nextDay(){
+    /*public void nextDay(){
         Collections.addAll(appointmentsArrayList,timeSlotInADay);
     }
+
+     */
     public void changeSpecificBooking(int dayNo, int posOneToEight, String newName) {
         index = (dayNo - 1) * 8 + (posOneToEight - 1);
         if (index < appointmentsArrayList.size()) {
