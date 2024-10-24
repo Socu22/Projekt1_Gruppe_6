@@ -168,7 +168,7 @@ public class PaymentHandler {
 
                 // Case 4 er til at afslutte programmet
                 case 4:
-                    System.out.println("Går tilbage til hovedmenu.");
+                    System.out.println("");
                     exit = true;
                     break;
 

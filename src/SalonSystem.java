@@ -82,7 +82,8 @@ public class SalonSystem {
                         paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
 
                         // Når PaymentHandler er færdig, returnerer vi til hovedmenuen i SalonSystem
-                        System.out.println("Tilbage til hovedmenuen i Harry's Salon");
+                        System.out.println("Går tilbage til hovedmenuen");
+                        System.out.println("");
                         break;
 
 
