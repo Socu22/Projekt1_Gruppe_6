@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 
 public class Appointment {
@@ -10,27 +11,26 @@ public class Appointment {
     private int bookingId =0;
     private String name="";
     private String phoneNumber ="";
-    private String mail="";
     private LocalDate date;
-    private int timeSlot;
-    private LocalDate appointmentDateData;
+    private LocalTime timeSlot;
+    private double price;
+    private boolean isBooked;
 
 
 
-    Appointment(){
+    Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment){
 
         this.bookingId =accountCounter++;
         this.date=LocalDate.of(2024,1,1);
-        this.timeSlot=999999;
+        this.timeSlot=LocalTime.of(10,00);
         this.name="Empty";
         this.phoneNumber ="XXXXXXXX";
-        this.mail="XXX@XX.dk";
+        this.price = 700.00;
+        this.isBooked = false;
 
 
 
     }
-
-
 
     public static void setAccountCounter(int accountCounter) {
         Appointment.accountCounter = accountCounter;
@@ -44,8 +44,18 @@ public class Appointment {
         return bookingId;
     }
 
+    public String isItBooked(){
+        if (this.isBooked = true){
+            return "BOOKED";
+        }
+        else {
+            return "AVAILABLE";
+        }
+    }
+
     @Override
     public String toString() {
-        return String.format("Appointment nr %d,Date: "+date+", TimeSlot(1-n): %d  ,Name: %s, Phone Number: %s, Mail: %s,", bookingId,timeSlot,name, phoneNumber, mail);
+//        return String.format("Appointment nr %d,Date: "+date+", TimeSlot(1-n): %d  ,Name: %s, Phone Number: %s, Mail: %s,", bookingId,timeSlot,name, phoneNumber);
+        return "Appointment nr: " + bookingId + "\nBooking status: " + isItBooked() + "\n \tName:" + name + "\n \tPhone number:" + phoneNumber + "\n \tDate:" + date + "\n \tTime:" + timeSlot;
     }
 }
