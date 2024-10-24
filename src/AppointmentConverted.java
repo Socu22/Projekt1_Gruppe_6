@@ -14,7 +14,9 @@ public class AppointmentConverted {
     private String date;
     private String timeSlot;
     private double price;
+    private double credit;
     private boolean isBooked;
+
 
     AppointmentConverted(Appointment appointmentForConvert){
 
@@ -46,6 +48,11 @@ public class AppointmentConverted {
     public double getPrice() {
         return price;
     }
+
+    public double getCredit(){
+        return credit;
+    }
+
 
     String getname(){
         return name;
