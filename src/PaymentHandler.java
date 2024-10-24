@@ -37,25 +37,39 @@ public class PaymentHandler {
 
         // Jeg laver en metode der hedder pay for at kunne fortælle om kreditten er betalt
         public void pay() {
+
             this.isPaid = true;
         }
 
         // Returnerer om kredit er betalt
         public boolean isPaid() {
+
             return this.isPaid;
         }
 
         // Returnere et aftale id
         public int getAppointmentId() {
+
             return appointmentId;
         }
     }
 
     // Jeg laver en metode der skal kunne registrere en betaling
     // Metoden tager summen af prisen for en aftale sammen med add-ons og uskrifter det samlet
-    public void registerPayment(double addons) {
+    public void registerPayment(int appointmentId, double addons) {
         double totalAmount = baseAmount + addons;
         System.out.println("Betaling registreret: " + totalAmount + " kr.");
+
+        // Opdater aftalen i fileHandler
+        Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
+        if (appointment != null) {
+            appointment.setPrice(totalAmount); // Antager der er en setPrice metode
+            try {
+                fileHandler.saveCalendar(); // Gem ændringer til filen
+            } catch (IOException e) {
+                System.out.println("Fejl ved gemning af kalender: " + e.getMessage());
+            }
+        }
     }
 
     // Jeg laver en metode der skal kunne registrere kredit
@@ -65,6 +79,17 @@ public class PaymentHandler {
         Credit credit = new Credit(appointmentId, totalAmount);
         creditList.add(credit);
         System.out.println("Kredit er registreret for aftale nr: " + appointmentId + " Med pris: " + totalAmount + " kr.");
+
+        // Opdater aftalen i fileHandler
+        Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
+        if (appointment != null) {
+            appointment.setCredit(totalAmount); // Antager der er en setCredit metode
+            try {
+                fileHandler.saveCalendar(); // Gem ændringer til filen
+            } catch (IOException e) {
+                System.out.println("Fejl ved gemning af kalender: " + e.getMessage());
+            }
+        }
     }
 
     // Jeg laver en metode der skal kunne betale kredit baseret på aftale nummer
@@ -237,6 +262,9 @@ public class PaymentHandler {
 
 
         }
+    }
+
+    private void registerPayment(double v) {
     }
 
     public static void main(String[] args) throws IOException {
