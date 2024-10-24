@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EconomyLogHandler {
 
-   /* private FileHandler fileHandler;
+    private FileHandler fileHandler;
 
 
     public void seeEarnings() { // metode som printer regninger for en angiven datoo
@@ -13,7 +13,7 @@ public class EconomyLogHandler {
 
     }
 
-    public String showCredit() { // metode som viser credit på
+    /*public String showCredit() { // metode som viser credit på
         Scanner tastBookingId = new Scanner(System.in);
 
             ArrayList<Appointment> appointments = fileHandler.getList();
@@ -22,7 +22,7 @@ public class EconomyLogHandler {
                     return true; // Gyldig appointmentId
                 }
             }
-        }
+        }*/
 
     public void startEconomyMenu() {
         Scanner economyMenuChoice = new Scanner(System.in);
@@ -40,8 +40,8 @@ public class EconomyLogHandler {
                 case 1:
                     seeEarnings();
                     break;
-                case 2: showCredit();
-                    break;
+             //   case 2: showCredit();
+            //        break;
                 case 3:
                     System.out.println("");
                     out = true;
@@ -49,5 +49,5 @@ public class EconomyLogHandler {
             }
 
         }
-    }*/
+    }
 }
