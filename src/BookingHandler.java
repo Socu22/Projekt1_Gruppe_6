@@ -91,7 +91,9 @@ public class BookingHandler extends MenuAndInterface {
     public int findId(int idInput, FileHandler fileHandler){
         int x =0;
         for (Appointment a : fileHandler.getList() ){
-           if(idInput==a.getBookingId()){x= a.getBookingId();}
+           if(idInput==a.getBookingId()){x= a.getBookingId();}else{
+               System.out.println("not the right id ");
+           }
 
         }
         return x;
