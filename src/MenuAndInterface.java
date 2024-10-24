@@ -1,17 +1,17 @@
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class MenuAndInterface {
     //konsolbaseret single-user bookingsystem.
 
     static protected ArrayList<Appointment> appointmentsArrayList = new ArrayList<>(365);//Bruges i Bookinghandler
-    public static void main(String[] args) {
+    static FileHandler f;
+    public static void main(String[] args) throws FileNotFoundException {
 
-        for (int i = 0; i < 365 ; i++) { //skaber det
-            appointmentsArrayList.add(null);
-
-        }
-        System.out.println(appointmentsArrayList.size()); // tjekker at arraylist har den korekte size
-
+      BookingHandler b = new BookingHandler();
+      f=new FileHandler();
+        System.out.println(b.findAppointment_WithId(1,f));
+        System.out.println(b.findAppointment_WithNavn("Lucas",f));
 
     }
 

@@ -14,18 +14,20 @@ public class Appointment {
     private LocalDate date;
     private LocalTime timeSlot;
     private double price;
+    private double credit;
     private boolean isBooked = false;
 
 
     Appointment(AppointmentConverted aC){
 
-        this.bookingId =accountCounter++;
+        this.bookingId =aC.getBookingId();
         this.date=LocalDate.parse(aC.getDate());
         this.timeSlot=LocalTime.parse(aC.getTime());
         this.name=aC.getname();
         this.phoneNumber = aC.getPhoneNumer();
-        this.price =700.00;
-        this.isBooked=false;
+        this.price =aC.getPrice();
+        this.isBooked=aC.isBooked();
+
     }
 
     Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment, String name, int phonenumber){
@@ -35,8 +37,10 @@ public class Appointment {
         this.timeSlot=timeForAppointment;
         this.name=name;
         this.phoneNumber =phonenumber;
-        this.price = 700.00;
+        this.price = 0.0;
+        this.credit=0.0;
         this.isBooked = false;
+
     }
 
     Boolean setBooked(){
@@ -51,6 +55,9 @@ public class Appointment {
     String getname(){
         return name;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
     LocalDate getDate(){
         return date;
@@ -60,17 +67,34 @@ public class Appointment {
         return timeSlot;
     }
 
-    int getPhoneNumer(){
+    int getPhoneNumber(){
         return phoneNumber;
     }
+    public void setPhoneNumber(int recievedPhonenumber){
+        this.phoneNumber=recievedPhonenumber;
+    }
 
-    public void setName(String name) {
-        this.name = name;
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice(double recievedPrice){
+        this.price=recievedPrice;
+    }
+
+    public double getCredit(){
+        return credit;
+    }
+    public void setCredit (double recievedCredit){
+        this.credit=recievedCredit;
     }
 
     public int getBookingId() {
         return bookingId;
     }
+    public void setBookingId(int recievedBookingid){
+        this.bookingId=recievedBookingid;
+    }
+
 
     public String isItBooked(){
         if (this.isBooked == true){
@@ -79,6 +103,19 @@ public class Appointment {
         else {
             return "AVAILABLE";
         }
+    }
+
+    public boolean getBookingstatus(){
+        return isBooked;
+    }
+    public void setBookingstatus(boolean phoneNrcheck){
+     this.isBooked=phoneNrcheck;
+    }
+    public boolean phoneNrcheck (){
+        if (phoneNumber > 0){
+            return false;
+        }
+        else return true;
     }
 
     @Override
