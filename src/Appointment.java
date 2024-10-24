@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+
 public class Appointment {
     public static void main(String[] args) {
 
@@ -32,7 +33,7 @@ public class Appointment {
 
 
     public static void setAccountCounter(int accountCounter) {
-        Appointment2.accountCounter = accountCounter;
+        Appointment.accountCounter = accountCounter;
     }
 
     public void setName(String name) {

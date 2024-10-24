@@ -21,15 +21,15 @@ public class BookingHandler extends MenuAndInterface {
         b2.showBooking();
     }
     static  int index;
-    static Appointment2 currentAppointment2 =null;
-    static Appointment2[] timeSlotInADay= new Appointment2[8];
+    static Appointment currentAppointment=null;
+    static Appointment[] timeSlotInADay= new Appointment[8];
     static int bookingNr = 0;
 
     public void createAllAppointments(){
         for (int i = 0; i < 366; i++) {
             nextDay();
             for (int j = 0; j < timeSlotInADay.length ; j++) {
-                timeSlotInADay[j]= new Appointment2();
+                timeSlotInADay[j]= new Appointment();
             }
         }
         //some kind of bug with ekstra fields in arrayList but ti works now with the code
@@ -49,9 +49,9 @@ public class BookingHandler extends MenuAndInterface {
     public void changeSpecificBooking(int dayNo, int posOneToEight, String newName) {
         index = (dayNo - 1) * 8 + (posOneToEight - 1);
         if (index < appointmentsArrayList.size()) {
-            currentAppointment2 = appointmentsArrayList.get(index);
+            currentAppointment = appointmentsArrayList.get(index);
             try {
-                currentAppointment2.setName(newName);
+                currentAppointment.setName(newName);
             }catch (NullPointerException e){}
         }
 /*    public void createBookingToSpecificDay(int dayNo, int posOneToEight) {
@@ -70,11 +70,11 @@ public class BookingHandler extends MenuAndInterface {
             System.out.println(appointmentsArrayList.get(i));
         }
     }
-    public Appointment2 selectBooking(int dayNo, int posOneToEight){
+    public Appointment selectBooking(int dayNo, int posOneToEight){
         index = (dayNo - 1) * 8 + (posOneToEight - 1);
         if (index < appointmentsArrayList.size()) {
-            currentAppointment2 = appointmentsArrayList.get(index);
+            currentAppointment = appointmentsArrayList.get(index);
         }
-        return currentAppointment2;
+        return currentAppointment;
     }
 }
