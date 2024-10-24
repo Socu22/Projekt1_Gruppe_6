@@ -75,6 +75,7 @@ public class BookingHandler extends MenuAndInterface {
         if (index < DontFuckTHisappointmentsArrayList.size()) {DontFuckTHisappointmentsArrayList.set(index, null);  // Replace existing appointment
         } else {System.out.println("Error: Invalid booking index.");}}*/
     }
+
     public void showBooking(){
         for (int i = 0; i < DontFuckTHisappointmentsArrayList.size(); i++) {
             System.out.println(DontFuckTHisappointmentsArrayList.get(i));

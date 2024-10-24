@@ -97,7 +97,6 @@ public class SalonSystem {
                         break;
                 }
             }
-            scanner.close();
         }
     }
 }
@@ -160,22 +159,28 @@ class PaymentHandler2 {
     }
 
     public void showAvailableTimes(LocalDate date) {
-        for (int i = 0; i <= 4; i++) {
-            LocalDate currentDate = date.plusDays(i);
-            if (!holidays.contains(currentDate)) {
-                System.out.println("Ledige tider på " + currentDate + ":");
-                for (LocalTime time = OPENING_TIME; time.isBefore(CLOSING_TIME); time = time.plusMinutes(60)) {
-                    if (isTimeAvailable(currentDate, time)) {
-                        System.out.println(" - " + time);
-                    } else {
-                        System.out.println("Optaget på " + time);
-                    }
+        if (!holidays.contains(date)) {
+            System.out.println("Ledige tider på " + date + ":");
+            for (LocalTime time = OPENING_TIME; time.isBefore(CLOSING_TIME); time = time.plusMinutes(60)) {
+                if (isTimeAvailable(date, time)) {
+                    System.out.println(" - " + time);
+                } else {
+                    System.out.println("Optaget på " + time);
                 }
-            } else {
-                System.out.println("Salonen er lukket på " + currentDate + " (feriedag).");
             }
+        } else {
+            System.out.println("Salonen er lukket på " + date + " (feriedag).");
+        }
+
+        // Kræver at brugeren skriver "t" for at komme tilbage til hovedmenuen
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while (!input.equalsIgnoreCase("t")) {
+            System.out.println("Skriv 't' for at komme tilbage til hovedmenuen:");
+            input = scanner.nextLine();
         }
     }
+
 
     private boolean isSalonOpen(LocalDate date, LocalTime time) {
         return !holidays.contains(date) && (time.isAfter(OPENING_TIME.minusSeconds(1)) && time.isBefore(CLOSING_TIME));
@@ -205,29 +210,4 @@ class PaymentHandler2 {
             System.out.println("Forkert adgangskode");
         }
     }
-
-    public void registerPayment(Customer customer, double amount) {
-        for (Appointment2 appointment2 : appointments) {
-            if (appointment2.customer.equals(customer)) {
-                customer.totalBill += amount;
-                appointment2.setPaymentStatus(true);
-                System.out.println("Betaling er registreret for " + customer.name + ": " + amount + " kr.");
-                return;
-            }
-        }
-        System.out.println("Ingen aftale fundet for vedkommende.");
     }
-
-    public void setCredit(Customer customer) {
-        for (Appointment2 appointment2 : appointments) {
-            if (appointment2.customer.equals(customer)) {
-                appointment2.setPaymentStatus(false);
-                System.out.println("Kredit givet til " + customer.name);
-                return;
-            }
-        }
-        System.out.println("Ingen aftale fundet for vedkommende.");
-    }
-}
-
-
