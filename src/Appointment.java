@@ -14,7 +14,9 @@ public class Appointment {
     private LocalDate date;
     private LocalTime timeSlot;
     private double price;
+    private double credit;
     private boolean isBooked = false;
+
 
     Appointment(AppointmentConverted aC){
 
@@ -25,6 +27,7 @@ public class Appointment {
         this.phoneNumber = aC.getPhoneNumer();
         this.price =aC.getPrice();
         this.isBooked=aC.isBooked();
+
     }
 
     Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment, String name, int phonenumber){
@@ -35,7 +38,9 @@ public class Appointment {
         this.name=name;
         this.phoneNumber =phonenumber;
         this.price = 0.0;
+        this.credit=0.0;
         this.isBooked = false;
+
     }
 
     Boolean setBooked(){
@@ -76,6 +81,13 @@ public class Appointment {
         this.price=recievedPrice;
     }
 
+    public double getCredit(){
+        return credit;
+    }
+    public void setCredit (double recievedCredit){
+        this.credit=recievedCredit;
+    }
+
     public int getBookingId() {
         return bookingId;
     }
@@ -96,14 +108,15 @@ public class Appointment {
     public boolean getBookingstatus(){
         return isBooked;
     }
-    public void setBookingstatus(boolean inputs){
-     isBooked=inputs;
+    public void setBookingstatus(boolean phoneNrcheck){
+     this.isBooked=phoneNrcheck;
     }
-    /*public boolean inputs (){
-        if (phoneNumber ){
-            return
+    public boolean phoneNrcheck (){
+        if (phoneNumber > 0){
+            return false;
         }
-    }*/
+        else return true;
+    }
 
     @Override
     public String toString() {
