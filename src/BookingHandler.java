@@ -20,12 +20,12 @@ public class BookingHandler extends MenuAndInterface {
         b2.changeSpecificBooking(1,1,"Jake Fucktart");
         b2.showBooking();
     }
-    static  int index;
-    static Appointment currentAppointment=null;
-    static Appointment[] timeSlotInADay= new Appointment[8];
+    static  int index; //Index chosen depening on day and Timeslot
+    static Appointment currentAppointment=null; //So you know which Appointment is the current appointment
+    static Appointment[] timeSlotInADay= new Appointment[8]; //The eight timeslots Chosen
     static int bookingNr = 0;
 
-    public void createAllAppointments(){
+    public void createAllAppointments(){ //Fill up an arraylist so it can be used later
         for (int i = 0; i < 366; i++) {
             nextDay();
             for (int j = 0; j < timeSlotInADay.length ; j++) {
@@ -43,15 +43,15 @@ public class BookingHandler extends MenuAndInterface {
         appointmentsArrayList.removeFirst();
 }
 
-    public void nextDay(){
+    public void nextDay(){ //this sends an array to arralist just to make it easier to determin that the n timeslots is added per day
         Collections.addAll(appointmentsArrayList,timeSlotInADay);
     }
-    public void changeSpecificBooking(int dayNo, int posOneToEight, String newName) {
+    public void changeSpecificBooking(int dayNo, int posOneToEight, String newName) {//this is to change an orignal empty booking to add a new name depending on paramether
         index = (dayNo - 1) * 8 + (posOneToEight - 1);
         if (index < appointmentsArrayList.size()) {
             currentAppointment = appointmentsArrayList.get(index);
             try {
-                currentAppointment.setName(newName);
+                currentAppointment.setName(newName);//you can add more of these setter methoeds
             }catch (NullPointerException e){}
         }
 /*    public void createBookingToSpecificDay(int dayNo, int posOneToEight) {
@@ -65,12 +65,12 @@ public class BookingHandler extends MenuAndInterface {
         if (index < appointmentsArrayList.size()) {appointmentsArrayList.set(index, null);  // Replace existing appointment
         } else {System.out.println("Error: Invalid booking index.");}}*/
     }
-    public void showBooking(){
+    public void showBooking(){//prints all booking in system out print
         for (int i = 0; i < appointmentsArrayList.size(); i++) {
             System.out.println(appointmentsArrayList.get(i));
         }
     }
-    public Appointment selectBooking(int dayNo, int posOneToEight){
+    public Appointment selectBooking(int dayNo, int posOneToEight){ //custom methoed for selekting an specifik appointment
         index = (dayNo - 1) * 8 + (posOneToEight - 1);
         if (index < appointmentsArrayList.size()) {
             currentAppointment = appointmentsArrayList.get(index);
