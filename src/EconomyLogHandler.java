@@ -1,5 +1,5 @@
 public class EconomyLogHandler {
-    public String seeEarnings(date) { // metode som printer regninger for en angiven dato
+    /*public String seeEarnings(date) { // metode som printer regninger for en angiven dato
 
         System.out.println("Fakturene for dagen :" + date);
         i = timeSlot;
@@ -11,5 +11,5 @@ public class EconomyLogHandler {
 
 public int showCredit(date){ // metode som viser credit på angiven dato
     System.out.println("For bookingen "+bookingId+ "har "+name+" kredit på : "+ credit);
-}
+} */
 }
