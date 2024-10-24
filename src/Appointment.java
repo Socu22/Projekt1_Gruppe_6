@@ -73,7 +73,7 @@ public class Appointment {
     }
 
     public String isItBooked(){
-        if (this.isBooked = true){
+        if (this.isBooked == true){
             return "BOOKED";
         }
         else {
