@@ -49,9 +49,11 @@ public class BookingHandler extends MenuAndInterface {
 
 
 
-    public void nextDay(){
+    /*public void nextDay(){
         Collections.addAll(DontFuckTHisappointmentsArrayList,timeSlotInADay);
     }
+
+     */
 
 
     public void changeSpecificBooking(int dayNo, int posOneToEight, String newName) {
@@ -84,6 +86,31 @@ public class BookingHandler extends MenuAndInterface {
             currentAppointment = DontFuckTHisappointmentsArrayList.get(index);
         }
         return currentAppointment;
+    }
+
+    public int findId(int idInput, FileHandler fileHandler){
+        int x =0;
+        for (Appointment a : fileHandler.getList() ){
+           if(idInput==a.getBookingId()){x= a.getBookingId();}
+
+        }
+        return x;
+    }
+    public String findNavn(String navnInput, FileHandler fileHandler){
+        String x ="";
+        for (Appointment a : fileHandler.getList() ){
+            x= a.getname();
+
+        }
+        return x;
+    }
+    public String findDato(int navnInput, FileHandler fileHandler){
+        LocalDate x ="";
+        for (Appointment a : fileHandler.getList() ){
+            x= a.getname();
+
+        }
+        return x;
     }
     
 
