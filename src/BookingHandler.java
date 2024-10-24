@@ -16,7 +16,7 @@ public class BookingHandler extends MenuAndInterface {
             //System.out.println(appointmentsArrayList.get(0)); //confirms that appointment is deleted (deleteBookingToSpecificDay)
             b.showBooking();*/
         BookingHandler b2 = new BookingHandler();
-        b2.createAllAppointments();
+        //b2.createAllAppointments();
         b2.changeSpecificBooking(1,1,"Jake Fucktart");
         b2.showBooking();
     }
@@ -25,7 +25,7 @@ public class BookingHandler extends MenuAndInterface {
     static Appointment[] timeSlotInADay= new Appointment[8];
     static int bookingNr = 0;
 
-    public void createAllAppointments(){
+    /*public void createAllAppointments(){
         for (int i = 0; i < 366; i++) {
             nextDay();
             for (int j = 0; j < timeSlotInADay.length ; j++) {
@@ -42,6 +42,8 @@ public class BookingHandler extends MenuAndInterface {
         appointmentsArrayList.remove(0);;
         appointmentsArrayList.removeFirst();
 }
+
+     */
 
     public void nextDay(){
         Collections.addAll(appointmentsArrayList,timeSlotInADay);
