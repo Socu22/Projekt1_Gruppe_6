@@ -1,8 +1,9 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Objects;
 
-public class BookingHandler extends MenuAndInterface {
+public class BookingHandler {
     static ArrayList<Appointment> DontFuckTHisappointmentsArrayList = new ArrayList<>();
     public static void main(String[] args) {
         /*BookingHandler b = new BookingHandler(); //test1
@@ -22,6 +23,7 @@ public class BookingHandler extends MenuAndInterface {
        // b2.createAllAppointments();
         b2.changeSpecificBooking(1,1,"Jake Fucktart");
         b2.showBooking();
+
     }
     static  int index;
     static Appointment currentAppointment=null;
@@ -89,34 +91,50 @@ public class BookingHandler extends MenuAndInterface {
         return currentAppointment;
     }
 
-    public int findId(int idInput, FileHandler fileHandler){
-        int x =0;
-        for (Appointment a : fileHandler.getList() ){
-           if(idInput==a.getBookingId()){x= a.getBookingId();}else{
-               System.out.println("not the right id ");
-           }
 
-        }
-        return x;
-    }
-    public String findNavn(String navnInput, FileHandler fileHandler){
-        String x ="";
+    public Appointment findAppointment_WithId(int idInput, FileHandler fileHandler){
+        Appointment x = null;
         for (Appointment a : fileHandler.getList() ){
-            x= a.getname();
-
-        }
-        return x;
-    }
-    /*public String findDato(int navnInput, FileHandler fileHandler){
-        LocalDate x ="";
-        for (Appointment a : fileHandler.getList() ){
-            x= a.getname();
+            if(idInput==a.getBookingId()){
+                x=a;
+            }
 
         }
         return x;
     }
 
-     */
+    public Appointment findAppointment_WithNavn(String stringInput, FileHandler fileHandler){
+        Appointment x = null;
+        for (Appointment a : fileHandler.getList() ){
+            if(Objects.equals(stringInput, a.getname())){
+                x=a;
+            }
+
+        }
+        return x;
+    }
+    public Appointment findAppointment_WithDate(LocalDate dateInput, FileHandler fileHandler){
+        Appointment x = null;
+        for (Appointment a : fileHandler.getList() ){
+            if(dateInput==a.getDate()){
+                x=a;
+            }
+
+        }
+        return x;
+    }
+    public Appointment findAppointment_WithTimeSlot(LocalDate timeInput, FileHandler fileHandler){
+        Appointment x = null;
+        for (Appointment a : fileHandler.getList() ){
+            if(timeInput==a.getDate()){
+                x=a;
+            }
+
+        }
+        return x;
+    }
+
+
     
 
 
