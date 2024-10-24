@@ -1,20 +1,14 @@
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
 
 import com.google.gson.*;
 import com.google.gson.reflect.TypeToken;
 
 public class FileHandler {
     //The arraylist of appointments in memory
-    private ArrayList<Appointment> listOfAppointments = new ArrayList<>();
+    private ArrayList<Appointment2> listOfAppointment2s = new ArrayList<>();
 
     //Creates a Gsonbuilder to convert variables into Json. Will be used to convert the arraylist of appointments to and from Json.
     static Gson gson = new GsonBuilder()

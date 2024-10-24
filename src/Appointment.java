@@ -1,7 +1,4 @@
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
-import java.util.Locale;
 
 public class Appointment {
     public static void main(String[] args) {
@@ -35,7 +32,7 @@ public class Appointment {
 
 
     public static void setAccountCounter(int accountCounter) {
-        Appointment.accountCounter = accountCounter;
+        Appointment2.accountCounter = accountCounter;
     }
 
     public void setName(String name) {

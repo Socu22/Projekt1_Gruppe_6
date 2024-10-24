@@ -149,7 +149,7 @@ public class PaymentHandler {
 
     public static void main(String[] args) {
         // Vi opretter et objekt "handler" som man vil kunne hente fra andre steder af senere hen
-        PaymentHandler handler = new PaymentHandler();
+        PaymentHandler2 handler = new PaymentHandler2();
         handler.startMenu();
     }
 }
