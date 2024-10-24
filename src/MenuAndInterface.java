@@ -10,7 +10,7 @@ public class MenuAndInterface {
     public static void main(String[] args) throws FileNotFoundException {
 
       BookingHandler b = new BookingHandler();
-      f=new FileHandler();
+     // f=new FileHandler();
         System.out.println(b.findAppointment_WithId(1,f));
         System.out.println(b.findAppointment_WithNavn("Empty",f));
         System.out.println(b.findAppointment_WithDate(LocalDate.of(2024,1,1),f));

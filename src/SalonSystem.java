@@ -4,6 +4,7 @@ import java.time.LocalTime;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
+import java.io.IOException;
 
 // Konsolbaseret single-user bookingsystem.
 public class SalonSystem {
@@ -77,14 +78,21 @@ public class SalonSystem {
                         paymentHandler2.showFinancialData(password);
                         break;
 
-                    case 6: // Indregistrering af økonomi ( Betaling og kredit )
-                        PaymentHandler paymentHandler = new PaymentHandler();  // <-- Opretter PaymentHandler
-                        paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
+                    case 6: // Indregistrering af økonomi (Betaling og kredit)
+                        try {
+                            PaymentHandler paymentHandler = new PaymentHandler();  // <-- Opretter PaymentHandler
+                            paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
+                        } catch (IOException e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
+                            // Håndtering af IOException
+                            System.out.println("Fejl: Der opstod en fejl ved indlæsning af filen.");
+                            e.printStackTrace();  // Udskriver stack trace for yderligere fejldiagnose
+                        }
 
                         // Når PaymentHandler er færdig, returnerer vi til hovedmenuen i SalonSystem
                         System.out.println("Går tilbage til hovedmenuen");
                         System.out.println("");
                         break;
+
 
 
                     case 7: // Afslutter programmet
