@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.time.LocalDate;
@@ -8,7 +10,7 @@ import com.google.gson.reflect.TypeToken;
 
 public class FileHandler {
     //The arraylist of appointments in memory
-    private ArrayList<Appointment2> listOfAppointment2s = new ArrayList<>();
+    private ArrayList<TestObject> listOfTestObjects = new ArrayList<>();
 
     //Creates a Gsonbuilder to convert variables into Json. Will be used to convert the arraylist of appointments to and from Json.
     static Gson gson = new GsonBuilder()
@@ -17,12 +19,52 @@ public class FileHandler {
             //tells the GsonBuilder to create itself.
             .create();
 
-    FileHandler (){
+    //Constructor for filehandler object, starts by loading the calendar file.
+    FileHandler () throws FileNotFoundException {
+        this.listOfTestObjects = this.loadCalendar();
+    }
+
+    //Method for accessing the list of appointments in the filehandler
+    ArrayList getList(){
+        return listOfTestObjects;
+    }
+
+    //Method for saving the calendar, should be done after changes are made to the list
+    void saveCalendar(){
 
     }
 
+    //Loads the calendar from the file
+    ArrayList loadCalendar() throws FileNotFoundException {
+        FileReader jsonReader = new FileReader("TestFile.json");
+        JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
+
+        Type testObjectListType = new TypeToken<ArrayList<TestObjectForSerialization>>() {}.getType();
+        ArrayList<TestObjectForSerialization> deserializedList = gson.fromJson(jsonText, testObjectListType);
+        return convertToDates(deserializedList);
+    }
+
+    //Converts all objects in the list of appointments to object compatible with jSon
+    ArrayList convertToStrings(){
+        return new ArrayList<>();
+    }
+
+    //Converts the json file into a list of appointments.
+    ArrayList convertToDates(ArrayList<TestObjectForSerialization> deSerializedList){
+        ArrayList<TestObject> convertedlist = new ArrayList<>();
+        for (TestObjectForSerialization obj: deSerializedList){
+            TestObject t = new TestObject(obj);
+            convertedlist.add(t);
+        }
+        return convertedlist;
+    }
+
+
+
     public static void main(String[] args) throws IOException {
 
+        FileHandler f1 = new FileHandler();
+        System.out.println(f1.getList());
 
         /*
         //This is an imaginary appointment coming from the software
@@ -43,7 +85,6 @@ public class FileHandler {
         //Read the json file
         FileReader jsonReader = new FileReader("TestFile.json");
         JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
-        System.out.println("File opened: ");
         System.out.println(jsonText);
 
         //Convert the json file back into the object
@@ -55,7 +96,7 @@ public class FileHandler {
 
 
 
-
+        /*
         //Test arraylist of objects.
         ArrayList<TestObject> listOfTestObjects = new ArrayList<>();
 
@@ -73,20 +114,29 @@ public class FileHandler {
 
         System.out.println(convertedlist);
 
-        String json = gson.toJson(convertedlist);
+        String jsonToWrite = gson.toJson(convertedlist);
+        FileWriter jsonWriter = new FileWriter("TestFile.json", false);
+        jsonWriter.write(jsonToWrite);
+        jsonWriter.close();
+        System.out.println("File created and saved");
 
-        System.out.println(json);
+        FileReader jsonReader = new FileReader("TestFile.json");
+        JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
+        System.out.println(jsonText);
 
         Type testObjectListType = new TypeToken<ArrayList<TestObjectForSerialization>>() {}.getType();
-        ArrayList<TestObjectForSerialization> deserializedList = gson.fromJson(json, testObjectListType);
+        ArrayList<TestObjectForSerialization> deserializedList = gson.fromJson(jsonText, testObjectListType);
         System.out.println(deserializedList);
 
         for (TestObjectForSerialization object: deserializedList){
             TestObject t = new TestObject(object);
             System.out.println(t);
         }
+
+         */
     }
     //Booking File has to be created
+
 }
 
 class TestObjectForSerialization{

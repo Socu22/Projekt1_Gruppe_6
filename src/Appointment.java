@@ -23,12 +23,9 @@ public class Appointment {
         this.date=LocalDate.of(2024,1,1);
         this.timeSlot=LocalTime.of(10,00);
         this.name="Empty";
-        this.phoneNumber ="XXXXXXXX";
+        this.phoneNumber =00000000;
         this.price =700.00;
         this.isBooked=false;
-////
-
-
     }
 
     Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment, String name, int phonenumber){
@@ -40,9 +37,6 @@ public class Appointment {
         this.phoneNumber =phonenumber;
         this.price = 700.00;
         this.isBooked = false;
-
-
-
     }
 
     public static void setAccountCounter(int accountCounter) {
