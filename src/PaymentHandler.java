@@ -82,14 +82,23 @@ public class PaymentHandler {
             if (credit.getAppointmentId() == appointmentId) {
                 found = true;
 
-                if (!credit.isPaid()) {
-                    credit.pay();
-                    System.out.println("Kredit betalt for appointmentId " + appointmentId);
+                Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
+                if (appointment != null) {
+                    appointment.setCredit(0.0);
+                    System.out.println("Kredit betalt for aftale ID " + appointmentId);
+
+                    try {
+                        fileHandler.saveCalendar();
+                    } catch (IOException e) {
+                        System.out.println("Fejl ved gemning af kalender: " + e.getMessage());
+                    }
                 } else {
-                    System.out.println("Kredit for aftale nr: " + appointmentId + " er allerede betalt.");
+                    System.out.println("Ingen aftale fundet med ID: " + appointmentId);
                 }
-                break;
+            } else {
+                System.out.println("Kredit for aftale nr: " + appointmentId + " er allerede betalt.");
             }
+            break;
         }
 
         if (!found) {
