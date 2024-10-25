@@ -42,7 +42,7 @@ public class PaymentHandler {
         Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
 
         if (appointment != null) {
-            appointment.setPrice(totalAmount);
+            findAppointment_WithId(appointmentId, fileHandler).setPrice(totalAmount);
             System.out.println("Betaling registreret: " + totalAmount + " kr.");
 
             try {
@@ -62,7 +62,7 @@ public class PaymentHandler {
 
         Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
         if (appointment != null) {
-            appointment.setCredit(totalAmount);
+            findAppointment_WithId(appointmentId, fileHandler).setCredit(totalAmount);
             System.out.println("Kredit registreret for aftale nr: " + appointmentId + " med beløb: " + totalAmount + " kr.");
 
             try {
