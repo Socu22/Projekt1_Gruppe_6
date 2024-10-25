@@ -9,7 +9,7 @@ public class MenuAndInterface {
 
     static protected ArrayList<Appointment> appointmentsArrayList = new ArrayList<>(365);//Bruges i Bookinghandler
     static FileHandler f;
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
 
       BookingHandler b = new BookingHandler();
         f=new FileHandler();
@@ -20,6 +20,8 @@ public class MenuAndInterface {
         b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f).setName("Gentle_mand");
         System.out.println(b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f));
         System.out.println(b.findAppointment_WithId(6,f));
+
+        b.createAppointment(f);
 
     }
 

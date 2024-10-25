@@ -22,14 +22,18 @@ public class BookingHandler {
             b.showBooking();*/
         BookingHandler b2 = new BookingHandler();
        // b2.createAllAppointments();
-        b2.changeSpecificBooking(1,1,"Jake Fucktart");
-        b2.showBooking();
+        //b2.changeSpecificBooking(1,1,"Jake Fucktart");
+        //b2.showBooking();
+
+
 
     }
     static  int index;
     static Appointment currentAppointment=null;
     static Appointment[] timeSlotInADay= new Appointment[8];
     static int bookingNr = 0;
+    static InputHandler inputHandler = new InputHandler();
+
 
    /* public void createAllAppointments(){
         for (int i = 0; i < 366; i++) {
@@ -127,6 +131,7 @@ public class BookingHandler {
             if(Objects.equals(formaterDateInput,formaterA)){
                 aTime[i]=a;
                 isDate=true;
+
                 if(i==7){
                     x=findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
 
@@ -160,6 +165,76 @@ public class BookingHandler {
 
         return x;
     }
+    public void createAppointment(FileHandler fileHandler) throws Exception {
+        Appointment[] aTime = new Appointment[8];
+        int i =0;
+        Boolean isWorking=false;
+        /*int inputDay;
+        int inputMonth;
+        int inputYear;
+        System.out.println("Indtast dag i tal: ");
+        inputDay = inputHandler.inputInt();
+        System.out.println("Indtast Måned i tal(uden 0): ");
+        inputMonth = inputHandler.inputInt();
+        System.out.println("Indtast År i tal: ");
+        inputYear = inputHandler.inputInt();
+        LocalDate dateInput=LocalDate.of(inputYear, inputMonth, inputDay);
+
+         */
+        LocalDate dateInput = inputHandler.inputDate();
+
+        /*int inputHour;
+        int inputMinutes;
+
+         */
+
+
+
+
+        for (Appointment a : fileHandler.getList() ){
+
+            String formaterDateInput =dateInput.toString();
+            String formaterA =a.getDate().toString();
+            if(Objects.equals(formaterDateInput,formaterA)){
+                aTime[i]=a;
+                System.out.println(aTime[i]);
+                isWorking=true;
+                i++;
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+        }
+
+        /*System.out.println("Indtast tid x=time (XX:YY): ");
+        inputHour = inputHandler.inputInt();
+        System.out.println("Indtast tid y=Minutter (XX:YY): ");
+        inputMinutes = inputHandler.inputInt();
+        LocalTime timeInput = LocalTime.of(inputHour,inputMinutes);
+
+         */
+        LocalTime timeInput = inputHandler.inputTime();
+        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
+
+        System.out.println("Hvad er dit navn: ");
+        String name = inputHandler.input.next();
+        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setName(name);
+
+
+
+        fileHandler.saveCalendar();
+
+    }
+
     /*public Appointment findAppointment_WithTimeSlot(LocalDate timeInput, FileHandler fileHandler){
         Appointment x = null;
         for (Appointment a : fileHandler.getList() ){
