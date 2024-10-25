@@ -25,7 +25,7 @@ public class AppointmentConverted {
         this.timeSlot=appointmentForConvert.getTime().toString();
         this.name=appointmentForConvert.getname();
         this.phoneNumber = appointmentForConvert.getPhoneNumber();
-        this.price = 700.00;
+        this.price = appointmentForConvert.getPrice();
         this.isBooked = false;
     }
 
