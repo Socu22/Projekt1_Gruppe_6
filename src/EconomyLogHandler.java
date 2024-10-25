@@ -13,6 +13,7 @@ public class EconomyLogHandler {
 
     // Metode som printer regninger for en angiven dato
     public void seeEarnings() {
+        double totalEarningsForToday = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Indtast en dato (ÅR-MÅNED-DAG): ");
         LocalDate dateInput;
@@ -28,14 +29,17 @@ public class EconomyLogHandler {
         boolean found = false;
 
         for (Appointment appointment : appointments) {
-            if (appointment.getDate().equals(dateInput)) {
+            if (appointment.getDate().equals(dateInput) && appointment.getPrice() > 0) {
                 System.out.println(appointment);
-                found = true;
+                totalEarningsForToday = totalEarningsForToday + appointment.getPrice();
             }
         }
 
-        if (!found) {
+        if (totalEarningsForToday == 0) {
             System.out.println("Ingen aftaler fundet for datoen: " + dateInput);
+        }
+        else {
+            System.out.println("Den totale indkomst for dagen "+dateInput+" er : "+totalEarningsForToday);
         }
     }
 
@@ -43,19 +47,40 @@ public class EconomyLogHandler {
     public void showCredit() {
         ArrayList<Appointment> appointments = fileHandler.getList();
         boolean hasCredit = false;
+        double totalcredit = 0;
 
-        for (Appointment appointment : appointments) {
+        for (Appointment appointment : fileHandler.getList()) {
             if (appointment.getCredit() > 0) {  // Sørg for at 'getCredit()' findes i Appointment-klassen
                 System.out.println(appointment);
-                hasCredit = true;
+                totalcredit = totalcredit + appointment.getCredit();
             }
         }
 
-        if (!hasCredit) {
+        if (totalcredit==0) {
             System.out.println("Ingen aftaler med kredit fundet.");
         }
+        else {
+            System.out.println("Den totale kredit er: "+ totalcredit);
+        }
+    }
+    public boolean validateAppointmentId(int appointmentId) {
+        ArrayList<Appointment> appointments = fileHandler.getList();
+        for (Appointment appointment : appointments) {
+            if (appointment.getBookingId() == appointmentId) {
+                return true;
+            }
+        }
+        return false;
     }
 
+    public Appointment findAppointment_WithId(int idInput, FileHandler fileHandler) {
+        for (Appointment a : fileHandler.getList()) {
+            if (idInput == a.getBookingId()) {
+                return a;
+            }
+        }
+        return null;
+    }
 
     public void startEconomyMenu() {
         Scanner scanner = new Scanner(System.in);
