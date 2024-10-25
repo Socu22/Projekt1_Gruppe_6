@@ -155,7 +155,6 @@ public class PaymentHandler {
                     System.out.println("Ugyldigt valg, prøv igen.");
             }
         }
-        scanner.close(); // Luk scanner
     }
 
     private void handlePayment(Scanner scanner) {
