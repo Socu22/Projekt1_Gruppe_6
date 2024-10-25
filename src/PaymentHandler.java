@@ -37,53 +37,37 @@ public class PaymentHandler {
         }
     }
 
-    public void registerPayment(int appointmentId, double addons) {
+    public void registerPayment(int appointmentId, double addons) throws IOException {
         double totalAmount = BASE_AMOUNT + addons;
         Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
 
         if (appointment != null) {
             findAppointment_WithId(appointmentId, fileHandler).setPrice(totalAmount);
             System.out.println("Betaling registreret: " + totalAmount + " kr.");
-
-            try {
-                fileHandler.saveCalendar();
-            } catch (IOException e) {
-                System.out.println("Fejl ved gemning af kalender: " + e.getMessage());
-            }
+            fileHandler.saveCalendar();
         } else {
             System.out.println("Ingen aftale fundet med ID: " + appointmentId);
         }
     }
 
-    public void registerCredit(int appointmentId, double addons) {
+    public void registerCredit(int appointmentId, double addons) throws IOException {
         double totalAmount = BASE_AMOUNT + addons;
         Credit credit = new Credit(appointmentId, totalAmount);
         creditList.add(credit);
-
-        System.out.println("Kredit tilføjet: Aftale ID: " + appointmentId + ", Beløb: " + totalAmount); // Debug udskrift
+        System.out.println("Kredit tilføjet: Aftale ID: " + appointmentId + ", Beløb: " + totalAmount);
 
         Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
         if (appointment != null) {
             findAppointment_WithId(appointmentId, fileHandler).setCredit(totalAmount);
-            System.out.println("Kredit registreret for aftale nr: " + appointmentId + " med beløb: " + totalAmount + " kr."); // Debug udskrift
-
-            try {
-                fileHandler.saveCalendar();
-            } catch (IOException e) {
-                System.out.println("Fejl ved gemning af kalender: " + e.getMessage());
-            }
+            System.out.println("Kredit registreret for aftale nr: " + appointmentId + " med beløb: " + totalAmount + " kr.");
+            fileHandler.saveCalendar();
         } else {
             System.out.println("Ingen aftale fundet med ID: " + appointmentId);
         }
     }
 
-    public void payCredit(int appointmentId) {
+    public void payCredit(int appointmentId) throws IOException {
         boolean found = false;
-
-        System.out.println("Kreditter i creditList:"); // Debug udskrift
-        for (Credit credit : creditList) {
-            System.out.println("Kredit til aftale ID: " + credit.getAppointmentId() + ", Betalt: " + credit.isPaid()); // Debug udskrift
-        }
 
         for (Credit credit : creditList) {
             if (credit.getAppointmentId() == appointmentId) {
@@ -95,12 +79,7 @@ public class PaymentHandler {
                         findAppointment_WithId(appointmentId, fileHandler).setCredit(0.0);
                         credit.pay();
                         System.out.println("Kredit betalt for aftale ID " + appointmentId);
-
-                        try {
-                            fileHandler.saveCalendar();
-                        } catch (IOException e) {
-                            System.out.println("Fejl ved gemning af kalender: " + e.getMessage());
-                        }
+                        fileHandler.saveCalendar();
                     } else {
                         System.out.println("Kredit for aftale nr: " + appointmentId + " er allerede betalt.");
                     }
@@ -135,7 +114,7 @@ public class PaymentHandler {
         return null;
     }
 
-    public void startMenu() {
+    public void startMenu() throws IOException {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
 
@@ -167,7 +146,7 @@ public class PaymentHandler {
         }
     }
 
-    private void handlePayment(Scanner scanner) {
+    private void handlePayment(Scanner scanner) throws IOException {
         System.out.println("Indtast aftale nummer: ");
         int appointmentId = scanner.nextInt();
         if (validateAppointmentId(appointmentId)) {
@@ -190,7 +169,7 @@ public class PaymentHandler {
         }
     }
 
-    private void handleCredit(Scanner scanner) {
+    private void handleCredit(Scanner scanner) throws IOException {
         System.out.println("Indtast aftale nummer: ");
         int appointmentId = scanner.nextInt();
         if (validateAppointmentId(appointmentId)) {
@@ -213,7 +192,7 @@ public class PaymentHandler {
         }
     }
 
-    private void handlePayCredit(Scanner scanner) {
+    private void handlePayCredit(Scanner scanner) throws IOException {
         System.out.println("Indtast aftale nummer: ");
         int appointmentId = scanner.nextInt();
         if (validateAppointmentId(appointmentId)) {
