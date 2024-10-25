@@ -21,7 +21,8 @@ public class MenuAndInterface {
         System.out.println(b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f));
         //System.out.println(b.findAppointment_WithId(6,f));
 
-        b.createAppointment(f);
+        //b.createAppointment(f);
+        b.showAppointments(f);
 
     }
 

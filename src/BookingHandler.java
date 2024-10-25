@@ -246,6 +246,30 @@ public class BookingHandler {
         fileHandler.saveCalendar();
 
     }
+    public void showAppointments(FileHandler fileHandler) throws Exception {
+        Appointment[] aTime = new Appointment[8];
+        int i = 0;
+
+        LocalDate dateInput = inputHandler.inputDate();
+
+        for (Appointment a : fileHandler.getList()) {
+            if (dateInput.equals(a.getDate())) {
+                aTime[i] = a;
+                System.out.println(aTime[i]);
+                i++;
+            }
+        }
+
+        if (i == 0) {
+            System.out.println("No appointments found for the specified date.");
+        } else {
+            System.out.println("Total appointments on " + dateInput + ": " + i);
+        }
+
+
+
+
+    }
 
     /*public Appointment findAppointment_WithTimeSlot(LocalDate timeInput, FileHandler fileHandler){
         Appointment x = null;
