@@ -9,9 +9,12 @@ import java.io.IOException;
 // Konsolbaseret single-user bookingsystem.
 public class SalonSystem {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
+
+        FileHandler fileHandler;
+        fileHandler = new FileHandler();
 
         System.out.println("Velkommen til Hairy Harry's salonsystem");
 
@@ -74,8 +77,16 @@ public class SalonSystem {
                     case 5: // Økonomioplysninger - kræver password
                         System.out.println("Indtast adgangskode:");
                         String password = scanner.nextLine();
-
                         paymentHandler2.showFinancialData(password);
+
+                        try {
+                            EconomyLogHandler econmyHandler = new EconomyLogHandler();  // <-- Opretter PaymentHandler
+                            econmyHandler.startEconomyMenu();  // <-- Starter PaymentHandler menuen
+                        } catch (IOException e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
+                            // Håndtering af IOException
+                            System.out.println("Fejl: Der opstod en fejl ved indlæsning af filen.");
+                            e.printStackTrace();  // Udskriver stack trace for yderligere fejldiagnose
+                        }
                         break;
 
                     case 6: // Indregistrering af økonomi (Betaling og kredit)
@@ -226,6 +237,108 @@ class PaymentHandler2 {
             }
         } else {
             System.out.println("Forkert adgangskode");
+        }
+    }
+
+    public void run () throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
+
+        FileHandler fileHandler;
+        fileHandler = new FileHandler();
+
+        System.out.println("Velkommen til Hairy Harry's salonsystem");
+
+        boolean running = true;
+
+        while (running) {
+            System.out.println("Vælg en af følgende handlinger:");
+            System.out.println("1: Opret en aftale");
+            System.out.println("2: Slet en aftale");
+            System.out.println("3: Vis ledige tider");
+            System.out.println("4: Registrer ferie- eller lukkedage");
+            System.out.println("5: Se økonomioplysniger (kræver adgangskode)");
+            System.out.println("6: Registrer Økonomi");
+            System.out.println("7: Afslut program");
+
+            if (scanner.hasNextInt()) {
+                int choice = scanner.nextInt();
+                scanner.nextLine();
+
+                switch (choice) {
+                    case 1: // Oprettelse af aftale
+                        System.out.println("Indtast kundens navn:");
+                        String name = scanner.nextLine();
+                        Customer customer = new Customer(name);
+
+                        System.out.println("Indtast aftaledato (ÅR-MÅNED-DAG)");
+                        LocalDate date = LocalDate.parse(scanner.nextLine());
+
+                        System.out.println("Indtast aftaletidspunkt (TIME:MINUT)");
+                        LocalTime time = LocalTime.parse(scanner.nextLine());
+
+                        paymentHandler2.createAppointment(date, time, customer);
+                        break;
+
+                    case 2: // Slet en aftale
+                        System.out.println("Indtast kundens navn:");
+                        String customerToDelete = scanner.nextLine();
+                        Customer customerDel = new Customer(customerToDelete);
+
+                        System.out.println("Indtast aftalte dato (ÅR-MÅNED-DAG)");
+                        LocalDate dateToDelete = LocalDate.parse(scanner.nextLine());
+
+                        paymentHandler2.deleteAppointment(dateToDelete, customerDel);
+                        break;
+
+                    case 3: // Viser ledige tider
+                        System.out.println("Indtast ønsket dato (ÅR-MÅNED-DAG)");
+                        LocalDate dateForTimes = LocalDate.parse(scanner.nextLine());
+
+                        paymentHandler2.showAvailableTimes(dateForTimes);
+                        break;
+
+                    case 4: // Ferie/lukkedage
+                        System.out.println("Indtast feriedato (ÅR-MÅNED-DAG)");
+                        LocalDate holiday = LocalDate.parse(scanner.nextLine());
+
+                        paymentHandler2.registerHoliday(holiday);
+                        break;
+
+                    case 5: // Økonomioplysninger - kræver password
+                        System.out.println("Indtast adgangskode:");
+                        String password = scanner.nextLine();
+
+                        paymentHandler2.showFinancialData(password);
+                        break;
+
+                    case 6: // Indregistrering af økonomi (Betaling og kredit)
+                        try {
+                            PaymentHandler paymentHandler = new PaymentHandler();  // <-- Opretter PaymentHandler
+                            paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
+                        } catch (
+                                IOException e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
+                            // Håndtering af IOException
+                            System.out.println("Fejl: Der opstod en fejl ved indlæsning af filen.");
+                            e.printStackTrace();  // Udskriver stack trace for yderligere fejldiagnose
+                        }
+
+                        // Når PaymentHandler er færdig, returnerer vi til hovedmenuen i SalonSystem
+                        System.out.println("Går tilbage til hovedmenuen");
+                        System.out.println("");
+                        break;
+
+
+                    case 7: // Afslutter programmet
+                        running = false;
+                        System.out.println("Programmet afsluttes.");
+                        break;
+
+                    default:
+                        System.out.println("Ugyldigt valg. Prøv igen.");
+                        break;
+                }
+            }
         }
     }
 }
