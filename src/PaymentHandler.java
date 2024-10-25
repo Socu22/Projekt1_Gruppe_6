@@ -60,10 +60,12 @@ public class PaymentHandler {
         Credit credit = new Credit(appointmentId, totalAmount);
         creditList.add(credit);
 
+        System.out.println("Kredit tilføjet: Aftale ID: " + appointmentId + ", Beløb: " + totalAmount); // Debug udskrift
+
         Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
         if (appointment != null) {
             findAppointment_WithId(appointmentId, fileHandler).setCredit(totalAmount);
-            System.out.println("Kredit registreret for aftale nr: " + appointmentId + " med beløb: " + totalAmount + " kr.");
+            System.out.println("Kredit registreret for aftale nr: " + appointmentId + " med beløb: " + totalAmount + " kr."); // Debug udskrift
 
             try {
                 fileHandler.saveCalendar();
@@ -78,14 +80,19 @@ public class PaymentHandler {
     public void payCredit(int appointmentId) {
         boolean found = false;
 
+        System.out.println("Kreditter i creditList:"); // Debug udskrift
+        for (Credit credit : creditList) {
+            System.out.println("Kredit til aftale ID: " + credit.getAppointmentId() + ", Betalt: " + credit.isPaid()); // Debug udskrift
+        }
+
         for (Credit credit : creditList) {
             if (credit.getAppointmentId() == appointmentId) {
                 found = true;
 
                 Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
                 if (appointment != null) {
-                    if (!credit.isPaid()) {  // Kontroller, om kreditten allerede er betalt
-                        appointment.setCredit(0.0);
+                    if (!credit.isPaid()) {
+                        findAppointment_WithId(appointmentId, fileHandler).setCredit(0.0);
                         credit.pay();
                         System.out.println("Kredit betalt for aftale ID " + appointmentId);
 
@@ -102,11 +109,7 @@ public class PaymentHandler {
                 }
                 return;
             }
-
-        if (!found) {
-            System.out.println("Ingen kredit blev fundet for aftale nr: " + appointmentId);
         }
-    }
 
         if (!found) {
             System.out.println("Ingen kredit blev fundet for aftale nr: " + appointmentId);

@@ -27,7 +27,7 @@ public class Appointment {
         this.phoneNumber = aC.getPhoneNumer();
         this.price =aC.getPrice();
         this.isBooked=aC.isBooked();
-
+        this.credit=aC.getCredit();
     }
 
     Appointment(LocalDate dateForAppointment, LocalTime timeForAppointment, String name, int phonenumber){
