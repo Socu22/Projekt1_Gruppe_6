@@ -84,22 +84,29 @@ public class PaymentHandler {
 
                 Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
                 if (appointment != null) {
-                    appointment.setCredit(0.0);
-                    System.out.println("Kredit betalt for aftale ID " + appointmentId);
+                    if (!credit.isPaid()) {  // Kontroller, om kreditten allerede er betalt
+                        appointment.setCredit(0.0);
+                        credit.pay();
+                        System.out.println("Kredit betalt for aftale ID " + appointmentId);
 
-                    try {
-                        fileHandler.saveCalendar();
-                    } catch (IOException e) {
-                        System.out.println("Fejl ved gemning af kalender: " + e.getMessage());
+                        try {
+                            fileHandler.saveCalendar();
+                        } catch (IOException e) {
+                            System.out.println("Fejl ved gemning af kalender: " + e.getMessage());
+                        }
+                    } else {
+                        System.out.println("Kredit for aftale nr: " + appointmentId + " er allerede betalt.");
                     }
                 } else {
                     System.out.println("Ingen aftale fundet med ID: " + appointmentId);
                 }
-            } else {
-                System.out.println("Kredit for aftale nr: " + appointmentId + " er allerede betalt.");
+                return;
             }
-            break;
+
+        if (!found) {
+            System.out.println("Ingen kredit blev fundet for aftale nr: " + appointmentId);
         }
+    }
 
         if (!found) {
             System.out.println("Ingen kredit blev fundet for aftale nr: " + appointmentId);

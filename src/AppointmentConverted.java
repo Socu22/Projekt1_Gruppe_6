@@ -38,6 +38,10 @@ public class AppointmentConverted {
         this.name = name;
     }
 
+    public void setCredit(double credit) {
+        this.credit = credit;
+    }
+
     public int getBookingId() {
         return bookingId;
     }
