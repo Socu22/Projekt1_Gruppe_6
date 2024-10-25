@@ -35,6 +35,7 @@ public class FileHandler {
     //Method for saving the calendar, should be done after changes are made to the list
     void saveCalendar() throws IOException {
         Appointment.accountCounter = 1;
+        AppointmentConverted.accountCounter = 1;
         FileWriter jsonWriter = new FileWriter("src//TestFile5.json", false);
         convertToStrings(listOfAppointments);
         String jsonToWrite;
@@ -54,6 +55,7 @@ public class FileHandler {
     //Loads the calendar from the file
     ArrayList loadCalendar() throws FileNotFoundException {
         Appointment.accountCounter = 1;
+        AppointmentConverted.accountCounter = 1;
         FileReader jsonReader = new FileReader("src//TestFile5.json");
         JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
 
@@ -90,6 +92,7 @@ public class FileHandler {
         FileHandler f1 = new FileHandler();
         BookingHandler b=new BookingHandler();
         b.findAppointment_WithId(1,f1).setName("Mikkel");
+        f1.saveCalendar();
         f1.saveCalendar();
 
         /*
