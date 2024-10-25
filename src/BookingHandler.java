@@ -152,7 +152,7 @@ public class BookingHandler {
             String formaterTimeInput =timeInput.toString();
             String formaterAArray =a.getTime().toString();
             if(Objects.equals(formaterTimeInput, formaterAArray)){
-                x=a;
+                 x=a;
             }
 
         }
