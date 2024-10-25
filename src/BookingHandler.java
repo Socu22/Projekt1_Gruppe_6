@@ -98,25 +98,25 @@ public class BookingHandler {
 
 
     public Appointment findAppointment_WithId(int idInput, FileHandler fileHandler){
-        Appointment x = null;
         for (Appointment a : fileHandler.getList() ){
             if(idInput==a.getBookingId()){
-                x=a;
+                return a;
             }
 
         }
-        return x;
+        System.out.println("Fandt ikke id");
+        return null;
     }
 
     public Appointment findAppointment_WithNavn(String stringInput, FileHandler fileHandler){
-        Appointment x = null;
         for (Appointment a : fileHandler.getList() ){
             if(Objects.equals(stringInput, a.getname())){
-                x=a;
+                return a;
             }
 
         }
-        return x;
+        System.out.println("Fandt ikke navn");
+        return null;
     }
     public Appointment findAppointment_WithDateAndTime(LocalDate dateInput, LocalTime timeInput, FileHandler fileHandler){
         Appointment x = null;
@@ -135,6 +135,7 @@ public class BookingHandler {
                 if(i==7){
                     x=findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
 
+
                 }
 
 
@@ -148,6 +149,12 @@ public class BookingHandler {
 
             }*/
             i++;
+
+
+
+            try {
+                fileHandler.getList().set(Objects.requireNonNull(x).getBookingId(),x);
+            }catch (NullPointerException e ){}
         }
         return x;
     }
@@ -226,8 +233,13 @@ public class BookingHandler {
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
 
         System.out.println("Hvad er dit navn: ");
-        String name = inputHandler.input.next();
+        String name = inputHandler.input.nextLine();
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setName(name);
+
+        System.out.println("Hvad er dit Telefon Nummer : ");
+        int tlf = inputHandler.input.nextInt();
+        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setPhoneNumber(tlf);
+        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setBookingstatus();
 
 
 

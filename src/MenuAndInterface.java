@@ -13,13 +13,13 @@ public class MenuAndInterface {
 
       BookingHandler b = new BookingHandler();
         f=new FileHandler();
-        System.out.println(b.findAppointment_WithId(1,f));
-        b.findAppointment_WithId(1,f).setName("Lucas");
-        System.out.println(b.findAppointment_WithId(1,f));
-        System.out.println(b.findAppointment_WithNavn("Empty",f));
-        b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f).setName("Gentle_mand");
+       // System.out.println(b.findAppointment_WithId(1,f));
+        //b.findAppointment_WithId(1,f).setName("Lucas");
+        //System.out.println(b.findAppointment_WithId(1,f));
+        //System.out.println(b.findAppointment_WithNavn("Empty",f));
+        //b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f).setName("Gentle_mand");
         System.out.println(b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f));
-        System.out.println(b.findAppointment_WithId(6,f));
+        //System.out.println(b.findAppointment_WithId(6,f));
 
         b.createAppointment(f);
 

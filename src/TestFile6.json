@@ -60,10 +60,10 @@
 },
 {
   "bookingId": 7,
-  "name": "Empty",
+  "name": "LucasTheGod",
   "phoneNumber": 0,
   "date": "2024-01-01",
-  "timeSlot": "16:00",
+  "timeSlot": "15:00",
   "price": 0.0,
   "credit": 0.0,
   "isBooked": false
@@ -2580,8 +2580,8 @@
 },
 {
   "bookingId": 259,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "",
+  "phoneNumber": 32323232,
   "date": "2024-02-14",
   "timeSlot": "12:00",
   "price": 0.0,

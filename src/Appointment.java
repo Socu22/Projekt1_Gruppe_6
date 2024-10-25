@@ -108,8 +108,8 @@ public class Appointment {
     public boolean getBookingstatus(){
         return isBooked;
     }
-    public void setBookingstatus(boolean phoneNrcheck){
-     this.isBooked=phoneNrcheck;
+    public void setBookingstatus(){
+     this.isBooked=phoneNrcheck();
     }
     public boolean phoneNrcheck (){
         if (phoneNumber > 0){
