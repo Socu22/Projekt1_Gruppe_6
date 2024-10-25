@@ -1,57 +1,93 @@
-import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class EconomyLogHandler {
 
-  /*  private FileHandler fileHandler;
+    private FileHandler fileHandler;
 
-
-    public void seeEarnings() { // metode som printer regninger for en angiven datoo
-
-        Scanner economyDate = new Scanner(System.in);
-        Account.date = economyDate.nextLocalDate;
-
-        System.out.println("Skriv en dato  ÅR-MÅNED-DAG");
-
-
+    public EconomyLogHandler() throws IOException {
+        this.fileHandler = new FileHandler();
     }
 
-    public void showCredit() { // metode som viser credit på
-        Scanner tastBookingId = new Scanner(System.in);
+    // Metode som printer regninger for en angiven dato
+    public void seeEarnings() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Indtast en dato (ÅR-MÅNED-DAG): ");
+        LocalDate dateInput;
 
-            ArrayList<Appointment> appointments = fileHandler.getList();
-            for (Appointment appointment : appointments) {
-                if (appointment.getBookingCredit() > 0) {
-                    System.out.println(Appointment);
-                }
+        try {
+            dateInput = LocalDate.parse(scanner.next());
+        } catch (Exception e) {
+            System.out.println("Ugyldigt format! Prøv igen.");
+            return;
+        }
+
+        ArrayList<Appointment> appointments = fileHandler.getList();
+        boolean found = false;
+
+        for (Appointment appointment : appointments) {
+            if (appointment.getDate().equals(dateInput)) {
+                System.out.println(appointment);
+                found = true;
             }
         }
 
+        if (!found) {
+            System.out.println("Ingen aftaler fundet for datoen: " + dateInput);
+        }
+    }
+
+    // Metode som viser aftaler med kredit
+    public void showCredit() {
+        ArrayList<Appointment> appointments = fileHandler.getList();
+        boolean hasCredit = false;
+
+        for (Appointment appointment : appointments) {
+            if (appointment.getCredit() > 0) {  // Sørg for at 'getCredit()' findes i Appointment-klassen
+                System.out.println(appointment);
+                hasCredit = true;
+            }
+        }
+
+        if (!hasCredit) {
+            System.out.println("Ingen aftaler med kredit fundet.");
+        }
+    }
+
+
     public void startEconomyMenu() {
-        Scanner economyMenuChoice = new Scanner(System.in);
-        boolean out = false;
+        Scanner scanner = new Scanner(System.in);
+        boolean exit = false;
 
-        while (!out) {
-            System.out.println("Tast 1 for at printe fakturer for en angiven dag");
-            System.out.println("Tast 2 for at vise alle fakturer med kredit");
-            System.out.println("Tast 3 for at gå tilbage til hovedmenu");
+        while (!exit) {
+            System.out.println("Økonomimenu:");
+            System.out.println("1. Vis fakturaer for en bestemt dato");
+            System.out.println("2. Vis alle aftaler med kredit");
+            System.out.println("3. Tilbage til hovedmenu");
 
-            int economyChoice = economyMenuChoice.nextInt();
+            int choice;
+            try {
+                choice = Integer.parseInt(scanner.next());
+            } catch (Exception e) {
+                System.out.println("Ugyldigt valg, prøv igen.");
+                continue;
+            }
 
-            switch (economyChoice) {
-
+            switch (choice) {
                 case 1:
                     seeEarnings();
                     break;
-                case 2: showCredit();
+                case 2:
+                    showCredit();
                     break;
                 case 3:
-                    System.out.println("");
-                    out = true;
+                    exit = true;
                     break;
+                default:
+                    System.out.println("Ugyldigt valg, prøv igen.");
             }
-
         }
-    }*/
+    }
 }
