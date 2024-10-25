@@ -36,7 +36,7 @@ public class FileHandler {
     void saveCalendar() throws IOException {
         Appointment.accountCounter = 1;
         AppointmentConverted.accountCounter = 1;
-        FileWriter jsonWriter = new FileWriter("src//TestFile5.json", false);
+        FileWriter jsonWriter = new FileWriter("src//TestFile6.json", false);
         convertToStrings(listOfAppointments);
         String jsonToWrite;
         jsonWriter.write("[");
@@ -56,7 +56,7 @@ public class FileHandler {
     ArrayList loadCalendar() throws FileNotFoundException {
         Appointment.accountCounter = 1;
         AppointmentConverted.accountCounter = 1;
-        FileReader jsonReader = new FileReader("src//TestFile5.json");
+        FileReader jsonReader = new FileReader("src//TestFile6.json");
         JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
 
         Type appointmentListType = new TypeToken<ArrayList<AppointmentConverted>>() {}.getType();
