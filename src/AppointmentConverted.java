@@ -25,8 +25,9 @@ public class AppointmentConverted {
         this.timeSlot=appointmentForConvert.getTime().toString();
         this.name=appointmentForConvert.getname();
         this.phoneNumber = appointmentForConvert.getPhoneNumber();
-        this.price = 700.00;
+        this.price = appointmentForConvert.getPrice();
         this.isBooked = false;
+        this.credit = appointmentForConvert.getCredit();
     }
 
     public static void setAccountCounter(int accountCounter) {
@@ -35,6 +36,10 @@ public class AppointmentConverted {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setCredit(double credit) {
+        this.credit = credit;
     }
 
     public int getBookingId() {

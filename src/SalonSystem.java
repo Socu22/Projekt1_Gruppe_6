@@ -9,9 +9,12 @@ import java.io.IOException;
 // Konsolbaseret single-user bookingsystem.
 public class SalonSystem {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
+
+        FileHandler fileHandler;
+        fileHandler = new FileHandler();
 
         System.out.println("Velkommen til Hairy Harry's salonsystem");
 
