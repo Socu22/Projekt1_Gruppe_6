@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Objects;
@@ -113,16 +114,50 @@ public class BookingHandler {
         }
         return x;
     }
-    public Appointment findAppointment_WithDate(LocalDate dateInput, FileHandler fileHandler){
+    public Appointment findAppointment_WithDateAndTime(LocalDate dateInput, LocalTime timeInput, FileHandler fileHandler){
         Appointment x = null;
+        Appointment[] aTime = new Appointment[8];
+        int i =0;
+        Boolean isDate=false;
+
         for (Appointment a : fileHandler.getList() ){
+
             String formaterDateInput =dateInput.toString();
             String formaterA =a.getDate().toString();
             if(Objects.equals(formaterDateInput,formaterA)){
+                aTime[i]=a;
+                isDate=true;
+                if(i==7){
+                    x=findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
+
+                }
+
+
+            }
+            /*for (int j = 0; j < 8 ; j++) {
+                String formaterTimeInput =timeInput.toString();
+                String formaterATime =aTime[j].getTime().toString();
+                if(Objects.equals(formaterTimeInput,formaterATime)){
+                    x=aTime[j];
+                }
+
+            }*/
+            i++;
+        }
+        return x;
+    }
+    private Appointment findADaysSpecificAppointmentTimeslot_WithArray(Appointment[] inputArray, LocalTime timeInput, FileHandler fileHandler){
+        Appointment x = null;
+        for (Appointment a : inputArray ){
+            String formaterTimeInput =timeInput.toString();
+            String formaterAArray =a.getTime().toString();
+            if(Objects.equals(formaterTimeInput, formaterAArray)){
                 x=a;
             }
 
         }
+
+
         return x;
     }
     /*public Appointment findAppointment_WithTimeSlot(LocalDate timeInput, FileHandler fileHandler){
