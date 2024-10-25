@@ -1,6 +1,6 @@
 [{
   "bookingId": 1,
-  "name": "Mikkel",
+  "name": "Lucas",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "10:00",
@@ -50,7 +50,7 @@
 },
 {
   "bookingId": 6,
-  "name": "Empty",
+  "name": "LucasTheGod",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "15:00",
