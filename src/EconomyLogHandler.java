@@ -90,4 +90,8 @@ public class EconomyLogHandler {
             }
         }
     }
+    public static void main(String[] args) throws IOException {
+        EconomyLogHandler ehandler = new EconomyLogHandler();
+        ehandler.startEconomyMenu();
+    }
 }

@@ -77,8 +77,16 @@ public class SalonSystem {
                     case 5: // Økonomioplysninger - kræver password
                         System.out.println("Indtast adgangskode:");
                         String password = scanner.nextLine();
-
                         paymentHandler2.showFinancialData(password);
+
+                        try {
+                            EconomyLogHandler econmyHandler = new EconomyLogHandler();  // <-- Opretter PaymentHandler
+                            econmyHandler.startEconomyMenu();  // <-- Starter PaymentHandler menuen
+                        } catch (IOException e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
+                            // Håndtering af IOException
+                            System.out.println("Fejl: Der opstod en fejl ved indlæsning af filen.");
+                            e.printStackTrace();  // Udskriver stack trace for yderligere fejldiagnose
+                        }
                         break;
 
                     case 6: // Indregistrering af økonomi (Betaling og kredit)
