@@ -27,6 +27,7 @@ public class AppointmentConverted {
         this.phoneNumber = appointmentForConvert.getPhoneNumber();
         this.price = appointmentForConvert.getPrice();
         this.isBooked = false;
+        this.credit = appointmentForConvert.getCredit();
     }
 
     public static void setAccountCounter(int accountCounter) {
