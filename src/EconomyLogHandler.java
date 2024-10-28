@@ -5,14 +5,19 @@ import java.util.Scanner;
 
 public class EconomyLogHandler {
 
+    private static final String PASSWORD = "hairyharry";
+    public static InputHandler inputHandler= new InputHandler();
+
     private FileHandler fileHandler;
 
-    public EconomyLogHandler() throws IOException {
-        this.fileHandler = new FileHandler();
+
+    public EconomyLogHandler(FileHandler inputFileHandler) throws IOException {
+        this.fileHandler=inputFileHandler;
+
     }
 
     // Metode som printer regninger for en angiven dato
-    public void seeEarnings() {
+    public void seeEarnings(FileHandler fileHandler) {
         double totalEarningsForToday = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Indtast en dato (ÅR-MÅNED-DAG): ");
@@ -44,13 +49,12 @@ public class EconomyLogHandler {
     }
 
     // Metode som viser aftaler med kredit
-    public void showCredit() {
-        ArrayList<Appointment> appointments = fileHandler.getList();
-        boolean hasCredit = false;
+    public void showCredit(FileHandler fileHandler) {
+        ArrayList<Appointment> appointments = fileHandler.getList(); // indlæser appointments
         double totalcredit = 0;
 
         for (Appointment appointment : fileHandler.getList()) {
-            if (appointment.getCredit() > 0) {  // Sørg for at 'getCredit()' findes i Appointment-klassen
+            if (appointment.getCredit() != 0) {  // Sørg for at 'getCredit()' findes i Appointment-klassen
                 System.out.println(appointment);
                 totalcredit = totalcredit + appointment.getCredit();
             }
@@ -63,60 +67,58 @@ public class EconomyLogHandler {
             System.out.println("Den totale kredit er: "+ totalcredit);
         }
     }
-    public boolean validateAppointmentId(int appointmentId) {
-        ArrayList<Appointment> appointments = fileHandler.getList();
-        for (Appointment appointment : appointments) {
-            if (appointment.getBookingId() == appointmentId) {
-                return true;
-            }
-        }
-        return false;
-    }
+    public void startEconomyMenu() throws Exception {
+        String inputPASSWORD= inputHandler.inputString("Password: ");
+        if(PASSWORD.equals(inputPASSWORD)){
+            Scanner scanner = new Scanner(System.in);
+            boolean exit = false;
 
-    public Appointment findAppointment_WithId(int idInput, FileHandler fileHandler) {
-        for (Appointment a : fileHandler.getList()) {
-            if (idInput == a.getBookingId()) {
-                return a;
-            }
-        }
-        return null;
-    }
+            while (!exit) {
+                System.out.println("Økonomimenu:");
+                System.out.println("1. Vis alle fakturaer");
+                System.out.println("2. Vis fakturaer for en bestemt dato");
+                System.out.println("3. Vis alle aftaler med kredit");
+                System.out.println("4. Tilbage til hovedmenu");
 
-    public void startEconomyMenu() {
-        Scanner scanner = new Scanner(System.in);
-        boolean exit = false;
-
-        while (!exit) {
-            System.out.println("Økonomimenu:");
-            System.out.println("1. Vis fakturaer for en bestemt dato");
-            System.out.println("2. Vis alle aftaler med kredit");
-            System.out.println("3. Tilbage til hovedmenu");
-
-            int choice;
-            try {
-                choice = Integer.parseInt(scanner.next());
-            } catch (Exception e) {
-                System.out.println("Ugyldigt valg, prøv igen.");
-                continue;
-            }
-
-            switch (choice) {
-                case 1:
-                    seeEarnings();
-                    break;
-                case 2:
-                    showCredit();
-                    break;
-                case 3:
-                    exit = true;
-                    break;
-                default:
+                int choice;
+                try {
+                    choice = Integer.parseInt(scanner.next());
+                } catch (Exception e) {
                     System.out.println("Ugyldigt valg, prøv igen.");
+                    continue;
+                }
+
+                switch (choice) {
+                    case 1:
+                        showFinancialData(fileHandler);
+                        break;
+                    case 2:
+                        seeEarnings(fileHandler);
+                        break;
+                    case 3:
+                        showCredit(fileHandler);
+                        break;
+                    case 4:
+                        exit = true;
+                        break;
+                    default:
+                        System.out.println("Ugyldigt valg, prøv igen.");
+                }
             }
         }
     }
+    public void showFinancialData(FileHandler fileHandler) {
+
+            System.out.println("Økonomioplysninger:");
+            for (Appointment a : fileHandler.getList()) {
+                System.out.printf("Kunde: %s, Betalt: %s, Total regning: %f \n",a.getname(),a.isPaid() ?"Ja" : "Nej", a.getPrice());
+            }
+
+    }
+
+
     public static void main(String[] args) throws IOException {
-        EconomyLogHandler ehandler = new EconomyLogHandler();
-        ehandler.startEconomyMenu();
+        //EconomyLogHandler ehandler = new EconomyLogHandler();
+       // ehandler.startEconomyMenu();
     }
 }

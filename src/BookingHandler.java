@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -108,6 +109,7 @@ public class BookingHandler {
         return null;
     }
 
+
     public Appointment findAppointment_WithNavn(String stringInput, FileHandler fileHandler){
         for (Appointment a : fileHandler.getList() ){
             if(Objects.equals(stringInput, a.getname())){
@@ -176,26 +178,8 @@ public class BookingHandler {
         Appointment[] aTime = new Appointment[8];
         int i =0;
         Boolean isWorking=false;
-        /*int inputDay;
-        int inputMonth;
-        int inputYear;
-        System.out.println("Indtast dag i tal: ");
-        inputDay = inputHandler.inputInt();
-        System.out.println("Indtast Måned i tal(uden 0): ");
-        inputMonth = inputHandler.inputInt();
-        System.out.println("Indtast År i tal: ");
-        inputYear = inputHandler.inputInt();
-        LocalDate dateInput=LocalDate.of(inputYear, inputMonth, inputDay);
 
-         */
         LocalDate dateInput = inputHandler.inputDate();
-
-        /*int inputHour;
-        int inputMinutes;
-
-         */
-
-
 
 
         for (Appointment a : fileHandler.getList() ){
@@ -233,11 +217,11 @@ public class BookingHandler {
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
 
         System.out.println("Hvad er dit navn: ");
-        String name = inputHandler.input.nextLine();
+        String name = inputHandler.input.next();
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setName(name);
 
         System.out.println("Hvad er dit Telefon Nummer : ");
-        int tlf = inputHandler.input.nextInt();
+        int tlf = (Integer)inputHandler.input.nextInt();
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setPhoneNumber(tlf);
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setBookingstatus();
 
@@ -266,8 +250,106 @@ public class BookingHandler {
             System.out.println("Total appointments on " + dateInput + ": " + i);
         }
 
+    }
+    public void deleteAppointment(FileHandler fileHandler) throws Exception {
+        Appointment[] aTime = new Appointment[8];
+        int i =0;
+        Boolean isWorking=false;
+
+        LocalDate dateInput = inputHandler.inputDate();
 
 
+        for (Appointment a : fileHandler.getList() ){
+
+            String formaterDateInput =dateInput.toString();
+            String formaterA =a.getDate().toString();
+            if(Objects.equals(formaterDateInput,formaterA)){
+                aTime[i]=a;
+                System.out.println(aTime[i]);
+                isWorking=true;
+                i++;
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+        }
+
+        /*System.out.println("Indtast tid x=time (XX:YY): ");
+        inputHour = inputHandler.inputInt();
+        System.out.println("Indtast tid y=Minutter (XX:YY): ");
+        inputMinutes = inputHandler.inputInt();
+        LocalTime timeInput = LocalTime.of(inputHour,inputMinutes);
+
+         */
+        LocalTime timeInput = inputHandler.inputTime();
+        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
+
+        String name = "Empty";
+        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setName(name);
+
+
+        int tlf = 99999999;
+        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setPhoneNumber(tlf);
+        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setBookingstatus();
+
+
+
+        fileHandler.saveCalendar();
+
+    }
+
+    public void registerHoliday(FileHandler fileHandler) throws Exception {
+        Appointment[] aTime = new Appointment[8];
+        int i =0;
+        Boolean isWorking=false;
+
+        LocalDate dateInput = inputHandler.inputDate();
+
+
+        for (Appointment a : fileHandler.getList() ){
+
+            String formaterDateInput =dateInput.toString();
+            String formaterA =a.getDate().toString();
+            if(Objects.equals(formaterDateInput,formaterA)){
+                aTime[i]=a;
+
+
+                isWorking=true;
+                i++;
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+        }
+        for (int j = 0; j < aTime.length; j++) {
+            aTime[j].setName("Feriedag");
+
+
+        }
+
+
+
+
+
+        fileHandler.saveCalendar();
 
     }
 

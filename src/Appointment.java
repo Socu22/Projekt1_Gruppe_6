@@ -27,6 +27,7 @@ public class Appointment {
         this.phoneNumber = aC.getPhoneNumer();
         this.price =aC.getPrice();
         this.isBooked=aC.isBooked();
+        this.isBooked=aC.isBooked();
         this.credit=aC.getCredit();
     }
 
@@ -43,7 +44,7 @@ public class Appointment {
 
     }
 
-    Boolean setBooked(){
+    public Boolean setBooked(){
         isBooked = true;
         return true;
     }
@@ -102,6 +103,13 @@ public class Appointment {
         }
         else {
             return "AVAILABLE";
+        }
+    }
+    public boolean isPaid(){
+        if(price>0){
+            return true;
+        }else {
+            return false;
         }
     }
 
