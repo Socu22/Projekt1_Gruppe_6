@@ -1,11 +1,11 @@
 [{
   "bookingId": 1,
-  "name": "Feriedag",
-  "phoneNumber": 0,
+  "name": "Empty",
+  "phoneNumber": 99999999,
   "date": "2024-01-01",
   "timeSlot": "10:00",
-  "price": 12200.0,
-  "credit": 16200.0,
+  "price": 400.0,
+  "credit": 800.0,
   "isBooked": false
 },
 {
@@ -63,7 +63,7 @@
   "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
-  "timeSlot": "16:00",
+  "timeSlot": "15:00",
   "price": 0.0,
   "credit": 0.0,
   "isBooked": false

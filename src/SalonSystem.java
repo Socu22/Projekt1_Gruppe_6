@@ -9,9 +9,11 @@ import java.io.IOException;
 // Konsolbaseret single-user bookingsystem.
 public class SalonSystem {
 
+    private FileHandler fileHandler;
+
 
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
 
         FileHandler fileHandler;
@@ -113,15 +115,21 @@ public class SalonSystem {
                         break;
                 }
             }
-        }
+        } */
     }
 
-    public void run(FileHandler fileHandler) throws Exception {
+
+    SalonSystem(FileHandler inputFileHandler){
+        this.fileHandler=inputFileHandler;
+    }
+
+
+    public void run() throws Exception {
         BookingHandler b = new BookingHandler();
         InputHandler input = new InputHandler();
 
         Scanner scanner = new Scanner(System.in);
-        PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
+
 
 
 
@@ -163,11 +171,7 @@ public class SalonSystem {
                         break;
 
                     case 5: // Økonomioplysninger - kræver password
-                        System.out.println("Indtast adgangskode:");
-                        String password = scanner.nextLine();
-                        paymentHandler2.showFinancialData(password);
-
-                        try {
+                         try {
                             EconomyLogHandler econmyHandler = new EconomyLogHandler(fileHandler);  // <-- Opretter PaymentHandler
                             econmyHandler.startEconomyMenu();  // <-- Starter PaymentHandler menuen
                         } catch (
@@ -180,7 +184,7 @@ public class SalonSystem {
 
                     case 6: // Indregistrering af økonomi (Betaling og kredit)
                         try {
-                            PaymentHandler paymentHandler = new PaymentHandler();  // <-- Opretter PaymentHandler
+                            PaymentHandler paymentHandler = new PaymentHandler(fileHandler);  // <-- Opretter PaymentHandler
                             paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
                         } catch (
                                 IOException e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
@@ -210,7 +214,7 @@ public class SalonSystem {
     }
 }
 
-class Customer {
+/*class Customer {
     String name;
     boolean hasPaid;
     double totalBill;
@@ -222,6 +226,8 @@ class Customer {
     }
 }
 
+ */
+/*
 class Appointment2 {
     LocalDate date;
     LocalTime time;
@@ -239,7 +245,7 @@ class Appointment2 {
         this.isPaid = status;
     }
 }
-
+/*
 class PaymentHandler2 {
     private static final String PASSWORD = "hairyharry";
     private static final LocalTime OPENING_TIME = LocalTime.of(10, 0);
@@ -426,3 +432,5 @@ class PaymentHandler2 {
         }
     }
 }
+
+ */

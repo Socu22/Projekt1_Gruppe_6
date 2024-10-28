@@ -89,10 +89,13 @@ public class FileHandler {
 
 
     public static void main(String[] args) throws Exception {
+        /*
         FileHandler f1 = new FileHandler();
-        BookingHandler b = new BookingHandler(f1);
+        BookingHandler b = new BookingHandler();
         b.findAppointment_WithId(1).setName("Mikkel");
         f1.saveCalendar();
         f1.saveCalendar();
+
+         */
     }
 }

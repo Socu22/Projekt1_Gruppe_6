@@ -26,7 +26,7 @@ public class AppointmentConverted {
         this.name=appointmentForConvert.getname();
         this.phoneNumber = appointmentForConvert.getPhoneNumber();
         this.price = appointmentForConvert.getPrice();
-        this.isBooked = false;
+        this.isBooked = appointmentForConvert.getBookingstatus();
         this.credit = appointmentForConvert.getCredit();
     }
 

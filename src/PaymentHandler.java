@@ -8,9 +8,9 @@ public class PaymentHandler {
     public ArrayList<Credit> creditList;
     private FileHandler fileHandler;
 
-    public PaymentHandler() throws IOException {
+    public PaymentHandler(FileHandler inputFileHandler) throws IOException {
         creditList = new ArrayList<>();
-        fileHandler = new FileHandler();
+        fileHandler =inputFileHandler;
     }
 
     class Credit {
@@ -212,7 +212,9 @@ public class PaymentHandler {
     }
 
     public static void main(String[] args) throws IOException {
-        PaymentHandler handler = new PaymentHandler();
+       /* PaymentHandler handler = new PaymentHandler();
         handler.startMenu();
+
+        */
     }
 }

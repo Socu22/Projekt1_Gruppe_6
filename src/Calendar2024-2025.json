@@ -63,7 +63,7 @@
   "name": "Empty",
   "phoneNumber": 0,
   "date": "2024-01-01",
-  "timeSlot": "16:00",
+  "timeSlot": "15:00",
   "price": 0.0,
   "credit": 0.0,
   "isBooked": false
@@ -73,7 +73,7 @@
   "name": "Empty",
   "phoneNumber": 0,
   "date": "2024-01-01",
-  "timeSlot": "17:00",
+  "timeSlot": "15:00",
   "price": 0.0,
   "credit": 0.0,
   "isBooked": false
@@ -4261,12 +4261,12 @@
 {
   "bookingId": 427,
   "name": "Empty",
-  "phoneNumber": 0,
+  "phoneNumber": 99999999,
   "date": "2024-03-14",
   "timeSlot": "12:00",
-  "price": 0.0,
+  "price": 1700.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 428,
@@ -4320,7 +4320,7 @@
 },
 {
   "bookingId": 433,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-15",
   "timeSlot": "10:00",
@@ -4330,7 +4330,7 @@
 },
 {
   "bookingId": 434,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-15",
   "timeSlot": "11:00",
@@ -4340,17 +4340,17 @@
 },
 {
   "bookingId": 435,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Mikkel",
+  "phoneNumber": 30504870,
   "date": "2024-03-15",
   "timeSlot": "12:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 436,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-15",
   "timeSlot": "13:00",
@@ -4360,7 +4360,7 @@
 },
 {
   "bookingId": 437,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-15",
   "timeSlot": "14:00",
@@ -4370,7 +4370,7 @@
 },
 {
   "bookingId": 438,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-15",
   "timeSlot": "15:00",
@@ -4380,7 +4380,7 @@
 },
 {
   "bookingId": 439,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-15",
   "timeSlot": "16:00",
@@ -4390,7 +4390,7 @@
 },
 {
   "bookingId": 440,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-15",
   "timeSlot": "17:00",

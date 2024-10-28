@@ -18,15 +18,15 @@ public class MenuAndInterface {
         //System.out.println(b.findAppointment_WithId(1,f));
         //System.out.println(b.findAppointment_WithNavn("Empty",f));
         //b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f).setName("Gentle_mand");
-        System.out.println(b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f));
+        //System.out.println(b.findAppointment_WithDateAndTime(LocalDate.of(2024,1,1), LocalTime.of(15, 0),f));
         //System.out.println(b.findAppointment_WithId(6,f));
 
         //b.createAppointment(f);
         //b.showAppointments(f);
 
         //test salonSystem Run metode:
-       SalonSystem s = new SalonSystem();
-        s.run(f);
+       SalonSystem s = new SalonSystem(f);
+       s.run();
 
     }
 

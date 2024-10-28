@@ -121,9 +121,9 @@ public class Appointment {
     }
     public boolean phoneNrcheck (){
         if (phoneNumber > 0){
-            return false;
+            return true;
         }
-        else return true;
+        else return false;
     }
 
     @Override
