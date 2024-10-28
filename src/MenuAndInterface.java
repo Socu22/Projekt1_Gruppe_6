@@ -22,7 +22,11 @@ public class MenuAndInterface {
         //System.out.println(b.findAppointment_WithId(6,f));
 
         //b.createAppointment(f);
-        b.showAppointments(f);
+        //b.showAppointments(f);
+
+        //test salonSystem Run metode:
+       SalonSystem s = new SalonSystem();
+        s.run(f);
 
     }
 

@@ -1,6 +1,6 @@
 [{
   "bookingId": 1,
-  "name": "Lucas",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "10:00",
@@ -10,7 +10,7 @@
 },
 {
   "bookingId": 2,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "11:00",
@@ -20,7 +20,7 @@
 },
 {
   "bookingId": 3,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "12:00",
@@ -30,7 +30,7 @@
 },
 {
   "bookingId": 4,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "13:00",
@@ -40,7 +40,7 @@
 },
 {
   "bookingId": 5,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "14:00",
@@ -50,7 +50,7 @@
 },
 {
   "bookingId": 6,
-  "name": "LucasTheGod",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "15:00",
@@ -60,17 +60,17 @@
 },
 {
   "bookingId": 7,
-  "name": "LucasTheGod",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
-  "timeSlot": "15:00",
+  "timeSlot": "16:00",
   "price": 0.0,
   "credit": 0.0,
   "isBooked": false
 },
 {
   "bookingId": 8,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "17:00",
@@ -80,7 +80,7 @@
 },
 {
   "bookingId": 9,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-02",
   "timeSlot": "10:00",
@@ -90,7 +90,7 @@
 },
 {
   "bookingId": 10,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-02",
   "timeSlot": "11:00",
@@ -100,7 +100,7 @@
 },
 {
   "bookingId": 11,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-02",
   "timeSlot": "12:00",
@@ -110,7 +110,7 @@
 },
 {
   "bookingId": 12,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-02",
   "timeSlot": "13:00",
@@ -120,7 +120,7 @@
 },
 {
   "bookingId": 13,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-02",
   "timeSlot": "14:00",
@@ -130,7 +130,7 @@
 },
 {
   "bookingId": 14,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-02",
   "timeSlot": "15:00",
@@ -140,7 +140,7 @@
 },
 {
   "bookingId": 15,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-02",
   "timeSlot": "16:00",
@@ -150,7 +150,7 @@
 },
 {
   "bookingId": 16,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-01-02",
   "timeSlot": "17:00",
@@ -1940,8 +1940,8 @@
 },
 {
   "bookingId": 195,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Lucas",
+  "phoneNumber": 423725244,
   "date": "2024-02-02",
   "timeSlot": "12:00",
   "price": 0.0,

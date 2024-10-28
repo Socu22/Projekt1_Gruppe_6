@@ -9,6 +9,7 @@ import java.io.IOException;
 // Konsolbaseret single-user bookingsystem.
 public class SalonSystem {
 
+
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
@@ -75,14 +76,10 @@ public class SalonSystem {
                         break;
 
                     case 5: // Økonomioplysninger - kræver password
-                        System.out.println("Indtast adgangskode:");
-                        String password = scanner.nextLine();
-                        paymentHandler2.showFinancialData(password);
-
                         try {
-                            EconomyLogHandler econmyHandler = new EconomyLogHandler();  // <-- Opretter PaymentHandler
+                            EconomyLogHandler econmyHandler = new EconomyLogHandler(fileHandler);  // <-- Opretter PaymentHandler
                             econmyHandler.startEconomyMenu();  // <-- Starter PaymentHandler menuen
-                        } catch (IOException e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
+                        } catch (Exception e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
                             // Håndtering af IOException
                             System.out.println("Fejl: Der opstod en fejl ved indlæsning af filen.");
                             e.printStackTrace();  // Udskriver stack trace for yderligere fejldiagnose
@@ -115,6 +112,99 @@ public class SalonSystem {
                         System.out.println("Ugyldigt valg. Prøv igen.");
                         break;
                 }
+            }
+        }
+    }
+
+    public void run(FileHandler fileHandler) throws Exception {
+        BookingHandler b = new BookingHandler();
+        InputHandler input = new InputHandler();
+
+        Scanner scanner = new Scanner(System.in);
+        PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
+
+
+
+        System.out.println("Velkommen til Hairy Harry's salonsystem");
+
+        boolean running = true;
+
+        while (running) {
+            System.out.println("Vælg en af følgende handlinger:");
+            System.out.println("1: Opret en aftale");
+            System.out.println("2: Slet en aftale");
+            System.out.println("3: Vis ledige tider");
+            System.out.println("4: Registrer ferie- eller lukkedage");
+            System.out.println("5: Se økonomioplysniger (kræver adgangskode)");
+            System.out.println("6: Registrer Økonomi");
+            System.out.println("7: Afslut program");
+
+            if (scanner.hasNextInt()) {
+                int choice = scanner.nextInt();
+                scanner.nextLine();
+
+                switch (choice) {
+                    case 1: // Oprettelse af aftale
+                        b.createAppointment(fileHandler);
+
+
+                        break;
+
+                    case 2: // Slet en aftale
+                        b.deleteAppointment(fileHandler);
+                        break;
+
+                    case 3: // Viser ledige tider
+                        b.showAppointments(fileHandler);
+                        break;
+
+                    case 4: // Ferie/lukkedage
+                        b.registerHoliday(fileHandler);
+                        break;
+
+                    case 5: // Økonomioplysninger - kræver password
+                        System.out.println("Indtast adgangskode:");
+                        String password = scanner.nextLine();
+                        paymentHandler2.showFinancialData(password);
+
+                        try {
+                            EconomyLogHandler econmyHandler = new EconomyLogHandler(fileHandler);  // <-- Opretter PaymentHandler
+                            econmyHandler.startEconomyMenu();  // <-- Starter PaymentHandler menuen
+                        } catch (
+                                IOException e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
+                            // Håndtering af IOException
+                            System.out.println("Fejl: Der opstod en fejl ved indlæsning af filen.");
+                            e.printStackTrace();  // Udskriver stack trace for yderligere fejldiagnose
+                        }
+                        break;
+
+                    case 6: // Indregistrering af økonomi (Betaling og kredit)
+                        try {
+                            PaymentHandler paymentHandler = new PaymentHandler();  // <-- Opretter PaymentHandler
+                            paymentHandler.startMenu();  // <-- Starter PaymentHandler menuen
+                        } catch (
+                                IOException e) {  // <-- Håndtering af generel fil-IO-fejl inklusive FileNotFoundException
+                            // Håndtering af IOException
+                            System.out.println("Fejl: Der opstod en fejl ved indlæsning af filen.");
+                            e.printStackTrace();  // Udskriver stack trace for yderligere fejldiagnose
+                        }
+
+                        // Når PaymentHandler er færdig, returnerer vi til hovedmenuen i SalonSystem
+                        System.out.println("Går tilbage til hovedmenuen");
+                        System.out.println("");
+                        break;
+
+
+                    case 7: // Afslutter programmet
+                        running = false;
+                        System.out.println("Programmet afsluttes.");
+                        break;
+
+                    default:
+                        System.out.println("Ugyldigt valg. Prøv igen.");
+                        break;
+                }
+
             }
         }
     }
@@ -240,7 +330,10 @@ class PaymentHandler2 {
         }
     }
 
-    public void run () throws IOException {
+
+
+    public void run () throws Exception {
+        BookingHandler bookingHandler = new BookingHandler();
         Scanner scanner = new Scanner(System.in);
         PaymentHandler2 paymentHandler2 = new PaymentHandler2(); // Ny paymenthandler
 
@@ -267,17 +360,8 @@ class PaymentHandler2 {
 
                 switch (choice) {
                     case 1: // Oprettelse af aftale
-                        System.out.println("Indtast kundens navn:");
-                        String name = scanner.nextLine();
-                        Customer customer = new Customer(name);
+                        bookingHandler.createAppointment(fileHandler);
 
-                        System.out.println("Indtast aftaledato (ÅR-MÅNED-DAG)");
-                        LocalDate date = LocalDate.parse(scanner.nextLine());
-
-                        System.out.println("Indtast aftaletidspunkt (TIME:MINUT)");
-                        LocalTime time = LocalTime.parse(scanner.nextLine());
-
-                        paymentHandler2.createAppointment(date, time, customer);
                         break;
 
                     case 2: // Slet en aftale
