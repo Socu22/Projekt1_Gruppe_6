@@ -50,7 +50,7 @@ public class EconomyLogHandler {
         double totalcredit = 0;
 
         for (Appointment appointment : fileHandler.getList()) {
-            if (appointment.getCredit() > 0) {  // Sørg for at 'getCredit()' findes i Appointment-klassen
+            if (appointment.getCredit() != 0) {  // Sørg for at 'getCredit()' findes i Appointment-klassen
                 System.out.println(appointment);
                 totalcredit = totalcredit + appointment.getCredit();
             }
