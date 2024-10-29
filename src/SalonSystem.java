@@ -146,14 +146,15 @@ public class SalonSystem {
             System.out.println("5: Se økonomioplysniger (kræver adgangskode)");
             System.out.println("6: Registrer Økonomi");
             System.out.println("7: Afslut program");
-
-            if (scanner.hasNextInt()) {
-                int choice = scanner.nextInt();
-                scanner.nextLine();
-
+            int choice = input.inputInt();
                 switch (choice) {
                     case 1: // Oprettelse af aftale
-                        b.createAppointment(fileHandler);
+                        try {
+                            b.createAppointment(fileHandler);
+                        }
+                        catch (Exception e){
+                            System.out.println("Kunne ikke oprette booking");
+                        }
 
 
                         break;
@@ -207,7 +208,6 @@ public class SalonSystem {
                     default:
                         System.out.println("Ugyldigt valg. Prøv igen.");
                         break;
-                }
 
             }
         }

@@ -160,7 +160,7 @@ public class BookingHandler {
         }
         return x;
     }
-    private Appointment findADaysSpecificAppointmentTimeslot_WithArray(Appointment[] inputArray, LocalTime timeInput, FileHandler fileHandler){
+    public Appointment findADaysSpecificAppointmentTimeslot_WithArray(Appointment[] inputArray, LocalTime timeInput, FileHandler fileHandler){
         Appointment x = null;
         for (Appointment a : inputArray ){
             String formaterTimeInput =timeInput.toString();
@@ -174,13 +174,13 @@ public class BookingHandler {
 
         return x;
     }
+
     public void createAppointment(FileHandler fileHandler) throws Exception {
         Appointment[] aTime = new Appointment[8];
         int i =0;
-        Boolean isWorking=false;
+        Boolean isWorking;
 
         LocalDate dateInput = inputHandler.inputDate();
-
 
         for (Appointment a : fileHandler.getList() ){
 
@@ -192,17 +192,7 @@ public class BookingHandler {
                 isWorking=true;
                 i++;
 
-
-
-
-
-
-
-
-
-
             }
-
 
         }
 
@@ -214,41 +204,51 @@ public class BookingHandler {
 
          */
         LocalTime timeInput = inputHandler.inputTime();
-        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
+        if (!findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).getBookingstatus()){
+            findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
 
-        System.out.println("Hvad er dit navn: ");
-        String name = inputHandler.input.next();
-        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setName(name);
+            //System.out.println("Hvad er dit navn: (Kun fornavn)");
+            String name = inputHandler.inputString("navn");
+            findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setName(name);
 
-        System.out.println("Hvad er dit Telefon Nummer : ");
-        int tlf = (Integer)inputHandler.input.nextInt();
-        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setPhoneNumber(tlf);
-        findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setBookingstatus();
+            System.out.println("Hvad er dit Telefon Nummer : ");
+            int tlf = (Integer)inputHandler.inputInt();
+            findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setPhoneNumber(tlf);
+            findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setBookingstatus();
 
+            fileHandler.saveCalendar();
+        }
+        else{
+            System.out.println("Denne tid er allerede booket");
+        }
 
-
-        fileHandler.saveCalendar();
 
     }
     public void showAppointments(FileHandler fileHandler) throws Exception {
         Appointment[] aTime = new Appointment[8];
-        int i = 0;
+        int i;
 
         LocalDate dateInput = inputHandler.inputDate();
 
-        for (Appointment a : fileHandler.getList()) {
-            if (dateInput.equals(a.getDate())) {
-                aTime[i] = a;
-                System.out.println(aTime[i]);
-                i++;
+        for (int x = 0; x<5; x++){
+            i = 0;
+            for (Appointment a : fileHandler.getList()) {
+                if (dateInput.equals(a.getDate())) {
+                    aTime[i] = a;
+                    System.out.println(aTime[i]);
+                    i++;
+                }
             }
+
+            if (i == 0) {
+                System.out.println("Ingen datoer fundet for denne dato");
+            } else {
+                System.out.println("Total mængde aftaler på dagen: " + dateInput + ": " + i);
+            }
+            dateInput = dateInput.plusDays(1);
+            System.out.println(dateInput);
         }
 
-        if (i == 0) {
-            System.out.println("No appointments found for the specified date.");
-        } else {
-            System.out.println("Total appointments on " + dateInput + ": " + i);
-        }
 
     }
     public void deleteAppointment(FileHandler fileHandler) throws Exception {
@@ -297,7 +297,7 @@ public class BookingHandler {
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setName(name);
 
 
-        int tlf = 99999999;
+        int tlf = 0;
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setPhoneNumber(tlf);
         findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler).setBookingstatus();
 

@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,10 +8,12 @@ public class PaymentHandler {
     private static final double BASE_AMOUNT = 0.0;
     public ArrayList<Credit> creditList;
     private FileHandler fileHandler;
+    BookingHandler bH;
 
     public PaymentHandler(FileHandler inputFileHandler) throws IOException {
         creditList = new ArrayList<>();
         fileHandler =inputFileHandler;
+        bH = new BookingHandler();
     }
 
     class Credit {
@@ -38,6 +41,8 @@ public class PaymentHandler {
     }
 
     public void registerPayment(int appointmentId, double addons) throws IOException {
+
+
         double totalAmount = BASE_AMOUNT + addons;
         Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
 
@@ -69,21 +74,16 @@ public class PaymentHandler {
     public void payCredit(int appointmentId) throws IOException {
         boolean found = false;
 
-        for (Credit credit : creditList) {
-            if (credit.getAppointmentId() == appointmentId) {
+        for (Appointment a : fileHandler.getList()) {
+            if (a.getCredit()>0) {
                 found = true;
-
-                Appointment appointment = findAppointment_WithId(appointmentId, fileHandler);
-                if (appointment != null) {
-                    if (!credit.isPaid()) {
-                        findAppointment_WithId(appointmentId, fileHandler).setCredit(0.0);
-                        credit.pay();
-                        System.out.println("Kredit betalt for aftale ID " + appointmentId);
-                        fileHandler.saveCalendar();
-                    } else {
-                        System.out.println("Kredit for aftale nr: " + appointmentId + " er allerede betalt.");
-                    }
-                } else {
+                if (a != null) {
+                    findAppointment_WithId(appointmentId, fileHandler).setPrice(findAppointment_WithId(appointmentId, fileHandler).getPrice() + findAppointment_WithId(appointmentId, fileHandler).getCredit());
+                    findAppointment_WithId(appointmentId, fileHandler).setCredit(0.0);
+                    System.out.println("Kredit betalt for aftale ID " + a.getBookingId());
+                    fileHandler.saveCalendar();
+                }
+                else {
                     System.out.println("Ingen aftale fundet med ID: " + appointmentId);
                 }
                 return;
@@ -114,7 +114,8 @@ public class PaymentHandler {
         return null;
     }
 
-    public void startMenu() throws IOException {
+    public void startMenu() throws Exception {
+        InputHandler input = new InputHandler();
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
 
@@ -125,7 +126,7 @@ public class PaymentHandler {
             System.out.println("3. Betal kredit");
             System.out.println("4. Tilbage til hovedmenu");
 
-            int choice = scanner.nextInt();
+            int choice = input.inputInt();
 
             switch (choice) {
                 case 1:

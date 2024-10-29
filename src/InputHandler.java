@@ -9,7 +9,7 @@ public class InputHandler {
     static boolean isInvalid;
 
     public void getInput(){
-        userInput = input.next();
+        userInput = input.nextLine();
     }
 
     boolean isInOpeningHours(int hour){

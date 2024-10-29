@@ -4,7 +4,7 @@
   "phoneNumber": 0,
   "date": "2024-01-01",
   "timeSlot": "10:00",
-  "price": 0.0,
+  "price": 15900.0,
   "credit": 0.0,
   "isBooked": false
 },
@@ -2480,7 +2480,7 @@
 },
 {
   "bookingId": 249,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-13",
   "timeSlot": "10:00",
@@ -2490,7 +2490,7 @@
 },
 {
   "bookingId": 250,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-13",
   "timeSlot": "11:00",
@@ -2500,7 +2500,7 @@
 },
 {
   "bookingId": 251,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-13",
   "timeSlot": "12:00",
@@ -2510,17 +2510,17 @@
 },
 {
   "bookingId": 252,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Feriedag",
+  "phoneNumber": 30504870,
   "date": "2024-02-13",
   "timeSlot": "13:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 253,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-13",
   "timeSlot": "14:00",
@@ -2530,7 +2530,7 @@
 },
 {
   "bookingId": 254,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-13",
   "timeSlot": "15:00",
@@ -2540,7 +2540,7 @@
 },
 {
   "bookingId": 255,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-13",
   "timeSlot": "16:00",
@@ -2550,7 +2550,7 @@
 },
 {
   "bookingId": 256,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-13",
   "timeSlot": "17:00",
@@ -2560,57 +2560,57 @@
 },
 {
   "bookingId": 257,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "aij",
+  "phoneNumber": 22331144,
   "date": "2024-02-14",
   "timeSlot": "10:00",
-  "price": 0.0,
+  "price": 1100.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 258,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Kol",
+  "phoneNumber": 21092411,
   "date": "2024-02-14",
   "timeSlot": "11:00",
-  "price": 0.0,
+  "price": 700.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 259,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Mikkel",
+  "phoneNumber": 11223344,
   "date": "2024-02-14",
   "timeSlot": "12:00",
-  "price": 0.0,
+  "price": 800.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 260,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "koa",
+  "phoneNumber": 11223344,
   "date": "2024-02-14",
   "timeSlot": "13:00",
-  "price": 0.0,
-  "credit": 0.0,
-  "isBooked": false
+  "price": 1300.0,
+  "credit": 300.0,
+  "isBooked": true
 },
 {
   "bookingId": 261,
   "name": "Empty",
-  "phoneNumber": 0,
+  "phoneNumber": 99999999,
   "date": "2024-02-14",
   "timeSlot": "14:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 262,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-14",
   "timeSlot": "15:00",
@@ -2620,7 +2620,7 @@
 },
 {
   "bookingId": 263,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-14",
   "timeSlot": "16:00",
@@ -2630,7 +2630,7 @@
 },
 {
   "bookingId": 264,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-14",
   "timeSlot": "17:00",
@@ -2640,7 +2640,7 @@
 },
 {
   "bookingId": 265,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-15",
   "timeSlot": "10:00",
@@ -2650,7 +2650,7 @@
 },
 {
   "bookingId": 266,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-15",
   "timeSlot": "11:00",
@@ -2660,17 +2660,17 @@
 },
 {
   "bookingId": 267,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Feriedag",
+  "phoneNumber": 20202020,
   "date": "2024-02-15",
   "timeSlot": "12:00",
-  "price": 0.0,
+  "price": 1600.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 268,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-15",
   "timeSlot": "13:00",
@@ -2680,7 +2680,7 @@
 },
 {
   "bookingId": 269,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-15",
   "timeSlot": "14:00",
@@ -2690,7 +2690,7 @@
 },
 {
   "bookingId": 270,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-15",
   "timeSlot": "15:00",
@@ -2700,7 +2700,7 @@
 },
 {
   "bookingId": 271,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-15",
   "timeSlot": "16:00",
@@ -2710,7 +2710,7 @@
 },
 {
   "bookingId": 272,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-02-15",
   "timeSlot": "17:00",
@@ -4160,7 +4160,7 @@
 },
 {
   "bookingId": 417,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-13",
   "timeSlot": "10:00",
@@ -4170,7 +4170,7 @@
 },
 {
   "bookingId": 418,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-13",
   "timeSlot": "11:00",
@@ -4180,7 +4180,7 @@
 },
 {
   "bookingId": 419,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-13",
   "timeSlot": "12:00",
@@ -4190,7 +4190,7 @@
 },
 {
   "bookingId": 420,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-13",
   "timeSlot": "13:00",
@@ -4200,7 +4200,7 @@
 },
 {
   "bookingId": 421,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-13",
   "timeSlot": "14:00",
@@ -4210,7 +4210,7 @@
 },
 {
   "bookingId": 422,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-13",
   "timeSlot": "15:00",
@@ -4220,7 +4220,7 @@
 },
 {
   "bookingId": 423,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-13",
   "timeSlot": "16:00",
@@ -4230,7 +4230,7 @@
 },
 {
   "bookingId": 424,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-13",
   "timeSlot": "17:00",
@@ -4240,7 +4240,7 @@
 },
 {
   "bookingId": 425,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-14",
   "timeSlot": "10:00",
@@ -4250,7 +4250,7 @@
 },
 {
   "bookingId": 426,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-14",
   "timeSlot": "11:00",
@@ -4260,7 +4260,7 @@
 },
 {
   "bookingId": 427,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 99999999,
   "date": "2024-03-14",
   "timeSlot": "12:00",
@@ -4270,7 +4270,7 @@
 },
 {
   "bookingId": 428,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-14",
   "timeSlot": "13:00",
@@ -4280,7 +4280,7 @@
 },
 {
   "bookingId": 429,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-14",
   "timeSlot": "14:00",
@@ -4290,7 +4290,7 @@
 },
 {
   "bookingId": 430,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-14",
   "timeSlot": "15:00",
@@ -4300,7 +4300,7 @@
 },
 {
   "bookingId": 431,
-  "name": "Empty",
+  "name": "Feriedag",
   "phoneNumber": 0,
   "date": "2024-03-14",
   "timeSlot": "16:00",
@@ -4310,13 +4310,13 @@
 },
 {
   "bookingId": 432,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Feriedag",
+  "phoneNumber": 99999999,
   "date": "2024-03-14",
   "timeSlot": "17:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 433,
@@ -5690,13 +5690,13 @@
 },
 {
   "bookingId": 570,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Mikkel",
+  "phoneNumber": 11223344,
   "date": "2024-04-09",
   "timeSlot": "11:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 571,
@@ -12720,13 +12720,13 @@
 },
 {
   "bookingId": 1273,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Kamel",
+  "phoneNumber": 11223344,
   "date": "2024-08-09",
   "timeSlot": "10:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 1274,
@@ -12740,23 +12740,23 @@
 },
 {
   "bookingId": 1275,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Mikkel Hansen",
+  "phoneNumber": 30504870,
   "date": "2024-08-09",
   "timeSlot": "12:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 1276,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Mikkel",
+  "phoneNumber": 30504870,
   "date": "2024-08-09",
   "timeSlot": "13:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 1277,

@@ -111,7 +111,9 @@ public class EconomyLogHandler {
 
             System.out.println("Økonomioplysninger:");
             for (Appointment a : fileHandler.getList()) {
-                System.out.printf("Kunde: %s, Betalt: %s, Total regning: %f \n",a.getname(),a.isPaid() ?"Ja" : "Nej", a.getPrice());
+                if (!a.getname().equalsIgnoreCase("empty") && !a.getname().equalsIgnoreCase("feriedag")) {
+                    System.out.printf("Kunde: %s, Betalt: %s, Total regning: %f \n", a.getname(), a.isPaid() ? "Ja" : "Nej", a.getPrice());
+                }
             }
 
     }
