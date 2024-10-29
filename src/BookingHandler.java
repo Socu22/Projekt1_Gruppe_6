@@ -120,6 +120,7 @@ public class BookingHandler {
         System.out.println("Fandt ikke navn");
         return null;
     }
+
     public Appointment findAppointment_WithDateAndTime(LocalDate dateInput, LocalTime timeInput, FileHandler fileHandler){
         Appointment x = null;
         Appointment[] aTime = new Appointment[8];
@@ -175,6 +176,29 @@ public class BookingHandler {
         return x;
     }
 
+    public Appointment searchforAppointment(FileHandler fileHandler) throws Exception {
+        Appointment[] aTime = new Appointment[8];
+        int i =0;
+        Boolean isWorking;
+
+        LocalDate dateInput = inputHandler.inputDate();
+
+        for (Appointment a : fileHandler.getList() ){
+
+            String formaterDateInput =dateInput.toString();
+            String formaterA =a.getDate().toString();
+            if(Objects.equals(formaterDateInput,formaterA)){
+                aTime[i]=a;
+                System.out.println(aTime[i]);
+                isWorking=true;
+                i++;
+
+            }
+
+        }
+        LocalTime timeInput = inputHandler.inputTime();
+        return findADaysSpecificAppointmentTimeslot_WithArray(aTime,timeInput,fileHandler);
+    }
     public void createAppointment(FileHandler fileHandler) throws Exception {
         Appointment[] aTime = new Appointment[8];
         int i =0;
