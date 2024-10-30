@@ -37,7 +37,7 @@ public class FileHandler {
     void saveCalendar() throws IOException {
         Appointment.accountCounter = 1;
         AppointmentConverted.accountCounter = 1;
-        FileWriter jsonWriter = new FileWriter("src//Calendar2024-2025.json", false);
+        FileWriter jsonWriter = new FileWriter("src//Calendar2024-2025alt.json", false);
         convertToStrings(listOfAppointments);
         String jsonToWrite;
         jsonWriter.write("[");
@@ -57,7 +57,7 @@ public class FileHandler {
     ArrayList loadCalendar() throws FileNotFoundException {
         Appointment.accountCounter = 1;
         AppointmentConverted.accountCounter = 1;
-        FileReader jsonReader = new FileReader("src//Calendar2024-2025.json");
+        FileReader jsonReader = new FileReader("src//Calendar2024-2025alt.json");
         JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
 
         Type appointmentListType = new TypeToken<ArrayList<AppointmentConverted>>() {}.getType();
