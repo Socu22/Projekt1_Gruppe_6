@@ -75,6 +75,10 @@ public class AppointmentConverted {
         return phoneNumber;
     }
 
+    public void setIsBooked(boolean isBooked) {
+        this.isBooked = isBooked;
+    }
+
     public String isItBooked(){
         if (this.isBooked = true){
             return "BOOKED";
