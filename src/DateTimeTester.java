@@ -15,6 +15,8 @@ public class DateTimeTester {
         LocalDate date = LocalDate.of(2023,12,31);
         LocalTime timeslot;
 
+        //For info, see DateTimeTester2. This generates a calendar as well, but makes it empty.
+
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .create();

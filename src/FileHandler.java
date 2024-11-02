@@ -33,15 +33,15 @@ public class FileHandler {
         return listOfAppointments;
     }
 
-    //Method for saving the calendar, should be done after changes are made to the list
+    //Method for saving the calendar, should be done each time changes are made to the list
     void saveCalendar() throws IOException {
-        Appointment.accountCounter = 1;
-        AppointmentConverted.accountCounter = 1;
-        FileWriter jsonWriter = new FileWriter("src//Calendar2024-2025alt.json", false);
-        convertToStrings(listOfAppointments);
-        String jsonToWrite;
-        jsonWriter.write("[");
-        for (int i = 0; i<convertedAppointments.size();i++){
+        Appointment.accountCounter = 1; //make sure Booking ideas do not change
+        AppointmentConverted.accountCounter = 1; //Same as above
+        FileWriter jsonWriter = new FileWriter("src//Calendar2024-2025alt.json", false); //Create the file, false makes sure to overwrite existing file
+        convertToStrings(listOfAppointments); //Uses a method to convert the list of appointments to appointmenst that have strings instead of Local date and Local time
+        String jsonToWrite; //Create a string that will be written to the json file
+        jsonWriter.write("["); //Start with square brackets for formatting
+        for (int i = 0; i<convertedAppointments.size();i++){ //Loops through the converted appointments and writes them to the json file
             jsonToWrite = gson.toJson(convertedAppointments.get(i));
             jsonWriter.write(jsonToWrite);
             if (i != listOfAppointments.size()-1){
@@ -53,16 +53,16 @@ public class FileHandler {
         System.out.println("File created and saved");
     }
 
-    //Loads the calendar from the file
+    //Loads the calendar from the file, done at program start
     ArrayList loadCalendar() throws FileNotFoundException {
-        Appointment.accountCounter = 1;
-        AppointmentConverted.accountCounter = 1;
-        FileReader jsonReader = new FileReader("src//Calendar2024-2025alt.json");
-        JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class);
+        Appointment.accountCounter = 1; //Makes sure booking id's stay the same
+        AppointmentConverted.accountCounter = 1; //Same as above
+        FileReader jsonReader = new FileReader("src//Calendar2024-2025alt.json"); //find the file
+        JsonElement jsonText = gson.fromJson(jsonReader, JsonElement.class); //Creates json elements for the objects noted in the file
 
-        Type appointmentListType = new TypeToken<ArrayList<AppointmentConverted>>() {}.getType();
-        ArrayList<AppointmentConverted> deserializedList = gson.fromJson(jsonText, appointmentListType);
-        return convertToDates(deserializedList);
+        Type appointmentListType = new TypeToken<ArrayList<AppointmentConverted>>() {}.getType(); //Creates a type, so the program knows how to translate the objects to normal Appointment objects
+        ArrayList<AppointmentConverted> deserializedList = gson.fromJson(jsonText, appointmentListType); //Translates the json objects into converted appointment objects
+        return convertToDates(deserializedList); //Converts into real appointments with local date and local time objects
     }
 
     //Converts all objects in the list of appointments to object compatible with jSon
@@ -70,13 +70,13 @@ public class FileHandler {
         convertedAppointments = new ArrayList<>();
         AppointmentConverted aC;
         for (Appointment a: unconvertedAppointments){
-            aC= new AppointmentConverted(a);
+            aC= new AppointmentConverted(a); //Take the provided apppintment and convert it using the constructor in the appointmentconverted class
             convertedAppointments.add(aC);
         }
         return convertedAppointments;
     }
 
-    //Converts the json file into a list of appointments.
+    //Converts the objects retrieved from the json file into objets that have a Local date and local time variable instead of strings.
     ArrayList convertToDates(ArrayList<AppointmentConverted> deSerializedList){
         ArrayList<Appointment> convertedlist = new ArrayList<>();
         for (AppointmentConverted obj: deSerializedList){
