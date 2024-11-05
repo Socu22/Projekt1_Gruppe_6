@@ -1,5 +1,52 @@
-{
-  "convertedDate": "2024-01-01",
-  "testInt": 1,
-  "testString": "t1"
-}
+[
+  {
+    "convertedDate": "2024-01-01",
+    "testInt": 1,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-02",
+    "testInt": 2,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-03",
+    "testInt": 3,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-04",
+    "testInt": 4,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-05",
+    "testInt": 5,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-06",
+    "testInt": 6,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-07",
+    "testInt": 7,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-08",
+    "testInt": 8,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-09",
+    "testInt": 9,
+    "testString": "t1"
+  },
+  {
+    "convertedDate": "2024-01-10",
+    "testInt": 10,
+    "testString": "t1"
+  }
+]

@@ -160,7 +160,7 @@
 },
 {
   "bookingId": 17,
-  "name": "Empty",
+  "name": "Mikkel",
   "phoneNumber": 0,
   "date": "2024-01-03",
   "timeSlot": "10:00",
@@ -1400,8 +1400,8 @@
 },
 {
   "bookingId": 141,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Søren Rasmussen",
+  "phoneNumber": 90908990,
   "date": "2024-01-24",
   "timeSlot": "14:00",
   "price": 0.0,
@@ -4250,13 +4250,13 @@
 },
 {
   "bookingId": 426,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Mikkel",
+  "phoneNumber": 30504870,
   "date": "2024-03-14",
   "timeSlot": "11:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 427,
@@ -4280,23 +4280,23 @@
 },
 {
   "bookingId": 429,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Mikkel",
+  "phoneNumber": 30504870,
   "date": "2024-03-14",
   "timeSlot": "14:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 430,
-  "name": "Empty",
-  "phoneNumber": 0,
+  "name": "Mikkel",
+  "phoneNumber": 30504870,
   "date": "2024-03-14",
   "timeSlot": "15:00",
   "price": 0.0,
   "credit": 0.0,
-  "isBooked": false
+  "isBooked": true
 },
 {
   "bookingId": 431,
