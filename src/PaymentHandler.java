@@ -92,25 +92,6 @@ public class PaymentHandler {
         }
     }
 
-    public boolean validateAppointmentId(int appointmentId) {
-        ArrayList<Appointment> appointments = fileHandler.getList();
-        for (Appointment appointment : appointments) {
-            if (appointment.getBookingId() == appointmentId) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    public Appointment findAppointment_WithId(int idInput, FileHandler fileHandler) {
-        for (Appointment a : fileHandler.getList()) {
-            if (idInput == a.getBookingId()) {
-                return a;
-            }
-        }
-        return null;
-    }
-
     public void startMenu() throws Exception {
         InputHandler input = new InputHandler();
         Scanner scanner = new Scanner(System.in);
